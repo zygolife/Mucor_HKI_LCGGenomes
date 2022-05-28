@@ -1,8 +1,14 @@
 #!/bin/bash -l
-#SBATCH -p batch -N 1 -n 24 --mem 256gb --out logs/AAFTF.%a.log
+#SBATCH --nodes 1 --ntasks 48 -p short --mem 256gb -J shovill --out logs/AAFTF_shovill.%a.log
 
+# this load $SCRATCH variable
+module load workspace/scratch
 MEM=256
 CPU=$SLURM_CPUS_ON_NODE
+if [ -z $CPU ]; then
+ CPU=2
+fi
+
 N=${SLURM_ARRAY_TASK_ID}
 
 if [ -z $N ]; then
@@ -13,18 +19,15 @@ if [ -z $N ]; then
     fi
 fi
 
-module load AAFTF
-module load fastp
+OUTDIR=input
 
-FASTQ=input
 SAMPLEFILE=samples.csv
-ASM=asm/AAFTF
+ASM=asm/shovill
+MINLEN=500
+FASTQ=input
 WORKDIR=working_AAFTF
 PHYLUM=Mucoromycota
-mkdir -p $ASM $WORKDIR
-if [ -z $CPU ]; then
-    CPU=1
-fi
+mkdir -p $ASM
 IFS=, # set the delimiter to be ,
 tail -n +2 $SAMPLEFILE | sed -n ${N}p | while read ID BASE SPECIES STRAIN LOCUSTAG TYPESTRAIN
 do
@@ -49,9 +52,12 @@ do
     LEFT=$WORKDIR/${BASE}_fastp_1.fastq.gz
     RIGHT=$WORKDIR/${BASE}_fastp_2.fastq.gz
 
-    echo "$BASE $ID $STRAIN"
-    if [ ! -f $ASMFILE ]; then # can skip we already have made an assembly
+    echo "$BASE $STRAIN $ID"
+
+    if [ ! -s $ASMFILE ]; then
 	if [ ! -f $LEFT ]; then
+	    module load AAFTF
+	    module load fastp
 	    if [ ! -f $LEFTF ]; then # can skip filtering if this exists means already processed
 		if [ ! -f $LEFTTRIM ]; then
 		    AAFTF trim --method bbduk --memory $MEM --left $LEFTIN --right $RIGHTIN -c $CPU -o $WORKDIR/${BASE}
@@ -65,44 +71,53 @@ do
 	    fastp --in1 $LEFTF --in2 $RIGHTF --out1 $LEFT --out2 $RIGHT -w $CPU --dedup \
 		  --dup_calc_accuracy 6 -y --detect_adapter_for_pe \
 		  -j $WORKDIR/${BASE}.json -h $WORKDIR/${BASE}.html
+	    module unload fastp
+	    module unload AAFTF
 	fi
-	
-	AAFTF assemble -c $CPU --left $LEFT --right $RIGHT  --memory $MEM \
-	      -o $ASMFILE -w $WORKDIR/spades_${ID}
+	module load shovill
+	time shovill --cpu $CPU --ram $MEM --outdir $WORKDIR/shovill_${ID} \
+		--R1 $LEFT --R2 $RIGHT --nocorr --depth 90 --tmpdir $SCRATCH --minlen $MINLEN
+	module unload shovill
+	if [ -f $WORKDIR/shovill_${ID}/contigs.fa ]; then
+	    rsync -av $WORKDIR/shovill_${ID}/contigs.fa $ASMFILE
+	    pigz -c $WORKDIR/shovill_${ID}/contigs.gfa > $ASMGFA
+	else	
+	    echo "Cannot find $WORKDIR/shovill_${ID}/contigs.fa"
+	fi
 	
 	if [ -s $ASMFILE ]; then
-	    rm -rf $WORKDIR/spades_${ID}/K?? $WORKDIR/spades_${ID}/tmp
-	fi
-	
-	if [ ! -f $ASMFILE ]; then
+	    rm -rf $WORKDIR/shovill_${ID}
+	else
 	    echo "SPADES must have failed, exiting"
 	    exit
 	fi
     fi
+    module load AAFTF
     
     if [ ! -f $VECCLEAN ]; then
-	AAFTF vecscreen -i $ASMFILE -c $CPU -o $VECCLEAN
+	AAFTF vecscreen -i $ASMFILE -c $CPU -o $VECCLEAN 
     fi
+    
     if [ ! -f $PURGE ]; then
-	AAFTF sourpurge -i $VECCLEAN -o $PURGE -c $CPU --phylum $PHYLUM --left $LEFT --right $RIGHT
+	AAFTF sourpurge -i $VECCLEAN -o $PURGE -c $CPU --phylum $PHYLUM --left $LEFT  --right $RIGHT
     fi
     
     if [ ! -f $CLEANDUP ]; then
-    	AAFTF rmdup -i $PURGE -o $CLEANDUP -c $CPU -m 500
+	AAFTF rmdup -i $PURGE -o $CLEANDUP -c $CPU -m $MINLEN
     fi
     
     if [ ! -f $PILON ]; then
-    	AAFTF pilon -i $CLEANDUP -o $PILON -c $CPU --left $LEFT  --right $RIGHT --mem $MEM
+	AAFTF pilon -i $CLEANDUP -o $PILON -c $CPU --left $LEFT  --right $RIGHT 
     fi
     
     if [ ! -f $PILON ]; then
-    	echo "Error running Pilon, did not create file. Exiting"
-    	exit
+	echo "Error running Pilon, did not create file. Exiting"
+	exit
     fi
     
     if [ ! -f $SORTED ]; then
-	 AAFTF sort -i $PILON -o $SORTED
-	# AAFTF sort -i $CLEANDUP -o $SORTED
+#	AAFTF sort -i $CLEANDUP -o $SORTED
+	AAFTF sort -i $PILON -o $SORTED
     fi
     
     if [ ! -f $STATS ]; then
