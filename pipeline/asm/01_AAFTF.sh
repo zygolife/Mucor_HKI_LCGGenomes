@@ -1,7 +1,9 @@
 #!/bin/bash -l
-#SBATCH -p batch -N 1 -n 24 --mem 256gb --out logs/AAFTF.%a.log
+#SBATCH -p batch -N 1 -n 24 --mem 64gb --out logs/AAFTF.%a.log
 
-MEM=256
+# requires AAFTF 0.3.1 or later for full support of fastp options used
+
+MEM=64
 CPU=$SLURM_CPUS_ON_NODE
 N=${SLURM_ARRAY_TASK_ID}
 
@@ -44,30 +46,32 @@ do
     fi
     LEFTTRIM=$WORKDIR/${BASE}_1P.fastq.gz
     RIGHTTRIM=$WORKDIR/${BASE}_2P.fastq.gz
-    LEFTF=$WORKDIR/${BASE}_filtered_1.fastq.gz
-    RIGHTF=$WORKDIR/${BASE}_filtered_2.fastq.gz
-    LEFT=$WORKDIR/${BASE}_fastp_1.fastq.gz
-    RIGHT=$WORKDIR/${BASE}_fastp_2.fastq.gz
+    MERGETRIM=$WORKDIR/${BASE}_fastp_MG.fastq.gz
+    LEFT=$WORKDIR/${BASE}_filtered_1.fastq.gz
+    RIGHT=$WORKDIR/${BASE}_filtered_2.fastq.gz
+    MERGED=$WORKDIR/${BASE}_filtered_U.fastq.gz
 
     echo "$BASE $ID $STRAIN"
     if [ ! -f $ASMFILE ]; then # can skip we already have made an assembly
 	if [ ! -f $LEFT ]; then
-	    if [ ! -f $LEFTF ]; then # can skip filtering if this exists means already processed
-		if [ ! -f $LEFTTRIM ]; then
-		    AAFTF trim --method bbduk --memory $MEM --left $LEFTIN --right $RIGHTIN -c $CPU -o $WORKDIR/${BASE}
-		fi
-		AAFTF filter -c $CPU --memory $MEM -o $WORKDIR/${BASE} --left $LEFTTRIM --right $RIGHTTRIM --aligner bbduk
-		if [ -f $LEFTF ]; then
-		    #rm $LEFTTRIM $RIGHTTRIM # remove intermediate file
-		    echo "found $LEFTF"
-		fi
+	    if [ ! -f $LEFTTRIM ]; then
+		AAFTF trim --method fastp --dedup --merge --memory $MEM --left $LEFTIN --right $RIGHTIN -c $CPU -o $WORKDIR/${BASE}_fastp
+		AAFTF trim --method fastp --cutright -c $CPU --memory $MEM --left $WORKDIR/${BASE}_fastp_1P.fastq.gz --right $WORKDIR/${BASE}_fastp_2P.fastq.gz -o $WORKDIR/${BASE}_fastp2
+		AAFTF trim --method bbduk -c $CPU --memory $MEM --left $WORKDIR/${BASE}_fastp2_1P.fastq.gz --right $WORKDIR/${BASE}_fastp2_2P.fastq.gz -o $WORKDIR/${BASE}
 	    fi
-	    fastp --in1 $LEFTF --in2 $RIGHTF --out1 $LEFT --out2 $RIGHT -w $CPU --dedup \
-		  --dup_calc_accuracy 6 -y --detect_adapter_for_pe \
-		  -j $WORKDIR/${BASE}.json -h $WORKDIR/${BASE}.html
+	    AAFTF filter -c $CPU --memory $MEM -o $WORKDIR/${BASE} --left $LEFTTRIM --right $RIGHTTRIM --aligner bbduk
+	    AAFTF filter -c $CPU --memory $MEM -o $WORKDIR/${BASE} --left $MERGETRIM --aligner bbduk
+	    if [ -f $LEFT ]; then
+		rm -f $LEFTTRIM $RIGHTTRIM $WORKDIR/${BASE}_fastp* 
+		echo "found $LEFT"
+	    else
+		echo "did not create left file ($LEFT $RIGHT)"
+		exit
+	    fi
+	    
 	fi
 	
-	AAFTF assemble -c $CPU --left $LEFT --right $RIGHT  --memory $MEM \
+	AAFTF assemble -c $CPU --left $LEFT --right $RIGHT --merged $MERGED --memory $MEM \
 	      -o $ASMFILE -w $WORKDIR/spades_${ID}
 	
 	if [ -s $ASMFILE ]; then
