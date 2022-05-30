@@ -25,31 +25,27 @@ if [ -z $N ]; then
 fi
 GENOMEFOLDER=genomes
 EXT=fasta
-LINEAGE=ascomycota_odb10
+LINEAGE=mucoromycota_odb10
 OUTFOLDER=BUSCO
 SAMPLEFILE=samples.csv
-SEED_SPECIES=anidulans
+SEED_SPECIES=rhizopus_oryzae
 SAMPLES=samples.csv
 mkdir -p $OUTFOLDER
 
 IFS=, # set the delimiter to be ,
-tail -n +2 $SAMPLES | sed -n ${N}p | while read ID SAMPID BASE SAMPIDCC SPECIES PHYLUM STRAIN GEOLOC LAT LONG
+tail -n +2 $SAMPLES | sed -n ${N}p | while read ID BASE SPECIES STRAIN LOCUSTAG TYPESTRAIN
 do
-    if [[ "$PHYLUM" == "Basidiomycota" ]]; then
-	LINEAGE=basidiomycota_odb10
-    fi
     for type in AAFTF shovill
     do
-	GENOMEFILE=$GENOMEFOLDER/$STRAIN.$type.$EXT
+	GENOMEFILE=$GENOMEFOLDER/$ID.$type.$EXT
 	if [ -f $GENOMEFILE ]; then
-	    NAME=$STRAIN
 	    echo "GENOMEFILE is $GENOMEFILE"
 	    GENOMEFILE=$(realpath $GENOMEFILE)
-	    if [ -d "$OUTFOLDER/${NAME}" ];  then
-		echo "Already have run $NAME in folder busco - do you need to delete it to rerun?"
+	    if [ -d "$OUTFOLDER/${ID}" ];  then
+		echo "Already have run $ID in folder busco - do you need to delete it to rerun?"
 		exit
 	    else
-		busco -m genome -l $LINEAGE -c $CPU -o ${NAME}.${type} --out_path ${OUTFOLDER} --offline --augustus_species $SEED_SPECIES \
+		busco -m genome -l $LINEAGE -c $CPU -o ${ID}.${type} --out_path ${OUTFOLDER} --offline --augustus_species $SEED_SPECIES \
 		      --in $GENOMEFILE --download_path $BUSCO_LINEAGES
 	    fi
 	fi
