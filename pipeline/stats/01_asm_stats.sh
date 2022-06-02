@@ -11,7 +11,7 @@ mkdir -p $OUTDIR
 IFS=, # set the delimiter to be ,
 tail -n +2 $SAMPLEFILE | while read ID BASE SPECIES STRAIN LOCUSTAG TYPESTRAIN
 do
-    for type in AAFTF.round1 shovill
+    for type in AAFTF
     do
 	if [ ! -f $INDIR/$type/$ID.sorted.fasta ]; then
 		continue

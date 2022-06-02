@@ -3,5 +3,5 @@
 
 module load parallel
 
-mkdir -p reports
-ls genomes/*.fasta | parallel -j 4 python  scripts_Hiltunen/find_telomeres.py {} \> reports/{/.}.telomere_report.txt
+mkdir -p telomere_reports
+ls genomes/*.fasta | parallel -j 4 python  scripts_Hiltunen/find_telomeres.py {} \> telomere_reports/{/.}.telomere_report.txt
