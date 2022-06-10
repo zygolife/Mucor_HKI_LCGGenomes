@@ -1,4 +1,4 @@
-#!/usr/bin/bash -l
+#!/bin/bash -l
 #SBATCH -p short -N 1 -n 1 --mem 1gb --out logs/phylo_init.log
 
 TARGET=Phylogeny/genomes

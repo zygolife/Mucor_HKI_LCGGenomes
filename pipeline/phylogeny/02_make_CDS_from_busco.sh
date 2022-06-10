@@ -21,5 +21,5 @@ if [ -z $N ]; then
     exit
   fi
 fi
-
-time python3 ./scripts/busco_to_phyling.py --temp $SCRATCH --arrayjob $N --threads $CPU
+pushd Phylogeny
+time python3 ../scripts/busco_to_phyling.py --temp $SCRATCH --arrayjob $N --threads $CPU 
