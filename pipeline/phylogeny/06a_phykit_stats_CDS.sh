@@ -7,11 +7,11 @@ if [ $SLURM_CPUS_ON_NODE ]; then
 fi
 
 source config.txt
-PEPTREEEXT=cds.clipkit.FT.tre
+TREEEXT=cds.clipkit.FT.tre
 mkdir -p gene_trees
 pushd gene_trees
-ln -s ../aln/$HMM/*.${PEPTREEEXT} .
-ln -s ../aln/$HMM/*.$(basename $PEPTREEEXT .FT.tre) .
+ln -s ../aln/$HMM/*.${TREEEXT} .
+ln -s ../aln/$HMM/*.$(basename $TREEEXT .FT.tre) .
 find -L . -size 0 | xargs rm
 
 module load phykit
@@ -28,4 +28,4 @@ echo -e "$treefile\t$aln\t$len\t$meanBSS\t$medianBSS\t$evorate"
 }
 export -f summarize
 echo -e "TREE\tALN\tALNLEN\tmean_BSS\tmedian_BSS\tevoRate" > ../gene_trees.summarize_CDS.tsv
-parallel -j $CPU summarize ::: $(find . -name "*.${PEPTREEEXT}" ) >> ../gene_trees.summarize_CDS.tsv
+parallel -j $CPU summarize ::: $(find . -name "*.${TREEEXT}" ) >> ../gene_trees.summarize_CDS.tsv

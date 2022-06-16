@@ -18,3 +18,4 @@ echo " I will remove prefix.tab to make sure it is regenerated"
 pwd
 ../PHYling_Unified/PHYling init
 ../PHYling_Unified/PHYling search -q slurm
+#../PHYling_Unified/PHYling search -q parallel
