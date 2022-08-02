@@ -7,11 +7,10 @@ module load busco
 export AUGUSTUS_CONFIG_PATH=$(realpath lib/augustus/3.3/config)
 IN=Phylogeny/genomes
 OUT=Phylogeny/BUSCO
-DB=fungi_odb10
-#DB=mucoromycotina_odb10
+#DB=fungi_odb10
+DB=mucoromycota_odb10
 #DB=mucorales_odb10
 AUGUSTUSSPECIES=rhizopus_oryzae
-
 
 
 CPU=1

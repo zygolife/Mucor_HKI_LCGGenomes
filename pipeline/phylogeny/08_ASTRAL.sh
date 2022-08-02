@@ -10,17 +10,17 @@ module load ASTRAL
 
 # usethe subset folder instead
 
-CDSGENETREES=${PREFIX}.subset.${NUM}_taxa.$HMM.CDS.gene_trees.tre
-PEPGENETREES=${PREFIX}.subset.${NUM}_taxa.$HMM.aa.gene_trees.tre
-CDSCONSTREE=$(basename $CDSGENETREES .gene_trees.tre)".astral.tre"
-PEPCONSTREE=$(basename $PEPGENETREES .gene_trees.tre)".astral.tre"
+CDSGENETREES=Phylogeny/${PREFIX}.subset.${NUM}_taxa.$HMM.CDS.gene_trees.tre
+PEPGENETREES=Phylogeny/${PREFIX}.subset.${NUM}_taxa.$HMM.aa.gene_trees.tre
+CDSCONSTREE=Phylogeny/$(basename $CDSGENETREES .gene_trees.tre)".astral.tre"
+PEPCONSTREE=Phylogeny/$(basename $PEPGENETREES .gene_trees.tre)".astral.tre"
 
 if [ ! -f $CDSGENETREES ]; then
-    cat bestgenes/CDS/*.cds.clipkit.FT.tre > $CDSGENETREES
+    cat Phylogeny/bestgenes/CDS/*.cds.clipkit.FT.tre > $CDSGENETREES
 fi
 
 if [ ! -f $PEPGENETREES ]; then
-    cat bestgenes/PEP/*.aa.clipkit.FT.tre > $PEPGENETREES
+    cat Phylogeny/bestgenes/PEP/*.aa.clipkit.FT.tre > $PEPGENETREES
 fi
 
 echo "$CDSGENETREES -o $CDSCONSTREE"
@@ -35,6 +35,6 @@ if [ ! -s $PEPCONSTREE ]; then
 fi
 conda activate /bigdata/stajichlab/shared/condaenv/phyling
 
-perl PHYling_unified/util/rename_tree_nodes.pl $PEPCONSTREE prefix.tab > $(basename $PEPCONSTREE .tre).long.tre
-perl PHYling_unified/util/rename_tree_nodes.pl $CDSCONSTREE prefix.tab > $(basename $CDSCONSTREE .tre).long.tre
+perl PHYling_Unified/util/rename_tree_nodes.pl $PEPCONSTREE Phylogeny/prefix.tab > Phylogeny/$(basename $PEPCONSTREE .tre).long.tre
+perl PHYling_Unified/util/rename_tree_nodes.pl $CDSCONSTREE Phylogeny/prefix.tab > Phylogeny/$(basename $CDSCONSTREE .tre).long.tre
 
