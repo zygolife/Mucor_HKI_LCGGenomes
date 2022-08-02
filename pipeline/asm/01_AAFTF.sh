@@ -75,7 +75,7 @@ do
 	      -o $ASMFILE -w $WORKDIR/spades_${ID}
 	
 	if [ -s $ASMFILE ]; then
-	    rm -rf $WORKDIR/spades_${ID}/K?? $WORKDIR/spades_${ID}/tmp
+	    rm -rf $WORKDIR/spades_${ID}/K?? $WORKDIR/spades_${ID}/tmp $WORKDIR/spades_${ID}/K???
 	fi
 	
 	if [ ! -f $ASMFILE ]; then
