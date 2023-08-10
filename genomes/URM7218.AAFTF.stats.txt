@@ -1,0 +1,12 @@
+Assembly statistics for: genomes/URM7218.AAFTF.fasta
+   CONTIG COUNT  =  4271
+   TOTAL LENGTH  =  35758746
+            MIN  =  500
+            MAX  =  99875
+         MEDIAN  =  4668
+           MEAN  =  8372.45
+            L50  =  653
+            N50  =  16745
+            L90  =  2234
+            N90  =  4330
+            GC%  =  36.25

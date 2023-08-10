@@ -1,0 +1,12 @@
+Assembly statistics for: genomes/CBS251_35.AAFTF.fasta
+   CONTIG COUNT  =  4994
+   TOTAL LENGTH  =  37547528
+            MIN  =  487
+            MAX  =  395772
+         MEDIAN  =  1117
+           MEAN  =  7518.53
+            L50  =  192
+            N50  =  53200
+            L90  =  1380
+            N90  =  2827
+            GC%  =  40.53

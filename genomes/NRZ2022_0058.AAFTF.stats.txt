@@ -1,0 +1,12 @@
+Assembly statistics for: genomes/NRZ2022_0058.AAFTF.fasta
+   CONTIG COUNT  =  3538
+   TOTAL LENGTH  =  35287626
+            MIN  =  500
+            MAX  =  109271
+         MEDIAN  =  4881
+           MEAN  =  9973.89
+            L50  =  484
+            N50  =  22054
+            L90  =  1672
+            N90  =  5506
+            GC%  =  41.03

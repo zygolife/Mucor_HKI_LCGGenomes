@@ -1,0 +1,12 @@
+Assembly statistics for: genomes/OTU100.AAFTF.fasta
+   CONTIG COUNT  =  2784
+   TOTAL LENGTH  =  31355251
+            MIN  =  478
+            MAX  =  128063
+         MEDIAN  =  3359
+           MEAN  =  11262.66
+            L50  =  310
+            N50  =  29956
+            L90  =  1091
+            N90  =  6872
+            GC%  =  40.70

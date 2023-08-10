@@ -1,0 +1,12 @@
+Assembly statistics for: genomes/EMLQT1.AAFTF.fasta
+   CONTIG COUNT  =  2150
+   TOTAL LENGTH  =  30581303
+            MIN  =  500
+            MAX  =  197158
+         MEDIAN  =  4699
+           MEAN  =  14223.86
+            L50  =  245
+            N50  =  37100
+            L90  =  873
+            N90  =  8312
+            GC%  =  36.99
