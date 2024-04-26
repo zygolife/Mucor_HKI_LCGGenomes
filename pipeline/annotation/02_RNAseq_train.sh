@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH -p intel --time 6-0:00:00 --ntasks 24 --nodes 1 --mem 96G --out logs/annotate_train.%a.log
+#SBATCH --time 6-0:00:00 --ntasks 24 --nodes 1 --mem 96G --out logs/annotate_train.%a.log
 
 module unload miniconda3
 module load funannotate

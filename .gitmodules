@@ -1,3 +1,6 @@
 [submodule "ModelTeller"]
 	path = ModelTeller
 	url = https://github.com/shiranab/ModelTeller.git
+[submodule "PHYling_unified"]
+	path = PHYling_unified
+	url = https://github.com/stajichlab/PHYling_unified.git

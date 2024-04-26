@@ -1,17 +1,22 @@
-#!/bin/bash -l
-#SBATCH -p short --ntasks 48 --nodes 1 --mem 48G --out logs/annotate_mask.%a.log
+#!/usr/bin/bash -l
+#SBATCH -N 1 -c 24 --mem 24gb --out logs/repeatmask.%a.log
 
-module unload miniconda3
+module load RepeatModeler
 
 CPU=1
 if [ $SLURM_CPUS_ON_NODE ]; then
     CPU=$SLURM_CPUS_ON_NODE
 fi
+THREADS=$(expr $CPU / 4)
+if [ $THREADS -eq 0 ]; then
+	THREADS=1
+fi
 
 INDIR=genomes
-MASKDIR=RepeatMasker_run
+MASKDIR=analysis/RepeatMasker
 SAMPLES=samples.csv
 RMLIBFOLDER=lib/repeat_library
+FUNGILIB=lib/fungi_repeat.20170127.lib
 mkdir -p $RMLIBFOLDER
 RMLIBFOLDER=$(realpath $RMLIBFOLDER)
 N=${SLURM_ARRAY_TASK_ID}
@@ -30,40 +35,36 @@ if [ $N -gt $MAX ]; then
 fi
 
 IFS=,
-tail -n +2 $SAMPLES | sed -n ${N}p | while read ID BASE SPECIES STRAIN LOCUSTAG TYPESTRAIN
+PHYLUM="Mucoromycotina"
+
+tail -n +2 $SAMPLES | sed -n ${N}p | while read BASE FileBase SPECIES STRAIN LOCUS TYPE
 do
     name=$BASE
-    SPECIESNOSPACE=$(echo -n "$SPECIES $STRAIN" | perl -p -e 's/[\(\)\s]+/_/g')
-
-    for type in AAFTF shovill
-    do
-	name=$ID.$type
-	if [ ! -f $INDIR/${name}.fasta ]; then
-		echo "Cannot find $name.fasta in $INDIR - may not have been run yet"
-		exit
+    mkdir -p $MASKDIR/$BASE
+    GENOME=$(realpath $INDIR)/$BASE.AAFTF.fasta
+    FINAL=$(realpath $INDIR)/$BASE.masked.fasta
+    if [ ! -s $MASKDIR/$BASE/$BASE.AAFTF.fasta.masked ]; then
+	LIBRARY=$RMLIBFOLDER/$BASE.repeatmodeler.lib
+	COMBOLIB=$RMLIBFOLDER/$BASE.combined.lib
+	if [ ! -f $LIBRARY ]; then
+	    pushd $MASKDIR/$BASE
+	    BuildDatabase -name $BASE $GENOME
+	    RepeatModeler -threads $THREADS -database $BASE -LTRStruct
+	    rsync -a RM_*/consensi.fa.classified $LIBRARY
+	    rsync -a RM_*/families-classified.stk $RMLIBFOLDER/$BASE.repeatmodeler.stk
+	    popd
 	fi
-	if [ ! -s $INDIR/${name}.masked.fasta ]; then
-	    mkdir -p $MASKDIR/${name}
-	    GENOME=$(realpath $INDIR/${name}.fasta)
-	    if [ ! -f $MASKDIR/${name}/${name}.fasta.masked ]; then
-		LIBRARY=$RMLIBFOLDER/$SPECIESNOSPACE.repeatmodeler.lib
-		if [ ! -f $LIBRARY ]; then
-			module load RepeatModeler
-			pushd $MASKDIR/${name}
-			BuildDatabase -name $ID $GENOME
-			RepeatModeler -pa $CPU -database $ID -LTRStruct
-			rsync -a RM_*/consensi.fa.classified $LIBRARY
-			rsync -a RM_*/families-classified.stk $RMLIBFOLDER/$SPECIESNOSPACE.repeatmodeler.stk
-			popd
-		fi
-		if [ -f $LIBRARY ]; then
-	    		module load RepeatMasker
-	    		RepeatMasker -e ncbi -xsmall -s -pa $CPU -lib $LIBRARY -dir $MASKDIR/${name} -gff $INDIR/${name}.fasta
-		fi
-	    fi
-	    rsync -a $MASKDIR/${name}/${name}.fasta.masked $INDIR/${name}.masked.fasta
-	else
-	    echo "Skipping ${name} as masked file already exists"
+	if [ ! -s $COMBOLIB ]; then
+	    cat $LIBRARY $FUNGILIB > $COMBOLIB
 	fi
-    done
+	if [[ -s $LIBRARY && -s $COMBOLIB ]]; then
+	    module load RepeatMasker
+	    RepeatMasker -e ncbi -xsmall -s -pa $CPU -lib $COMBOLIB -dir $MASKDIR/$BASE -gff $GENOME
+	fi
+    else
+	echo "Skipping $BASE as masked file already exists"
+    fi
+    if [ ! -f $FINAL ]; then 
+   	rsync -a $MASKDIR/$BASE/$BASE.AAFTF.fasta.masked $FINAL
+    fi
 done

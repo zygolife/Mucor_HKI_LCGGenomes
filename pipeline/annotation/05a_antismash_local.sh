@@ -25,7 +25,7 @@ if [ $N -gt $MAX ]; then
   exit
 fi
 
-INPUTFOLDER=update_results
+INPUTFOLDER=predict_results
 
 IFS=,
 sed -n ${N}p $SAMPFILE | while read STRAIN NANOPORE ILLUMINA LOCUSTAG

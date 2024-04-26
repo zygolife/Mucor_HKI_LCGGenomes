@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH --ntasks 24 --nodes 1 --mem 96G -p intel
+#SBATCH --ntasks 24 --nodes 1 --mem 96G 
 #SBATCH --time 72:00:00 --out logs/annotate_iprscan.%a.log
 module unload miniconda3
 module load funannotate
@@ -41,7 +41,7 @@ do
        XML=$OUTDIR/$name/annotate_misc/iprscan.xml
        IPRPATH=$(which interproscan.sh)
        if [ ! -f $XML ]; then
-	   funannotate iprscan -i $OUTDIR/$name -o $XML -m local -c $CPU --iprscan_path $IPRPATH
+	   time funannotate iprscan -i $OUTDIR/$name -o $XML -m local -c $CPU --iprscan_path $IPRPATH
        fi
     done
 done

@@ -1,8 +1,7 @@
 #!/usr/bin/bash -l
-#SBATCH -p batch --time 3-0:00:00 --ntasks 16 --nodes 1 --mem 24G --out logs/annotate_predict.%a.log
+#SBATCH --time 3-0:00:00 --ntasks 16 --nodes 1 --mem 24G --out logs/annotate_predict.%a.log
 
 module load funannotate
-
 # this will define $SCRATCH variable if you don't have this on your system you can basically do this depending on
 # where you have temp storage space and fast disks
 module load workspace/scratch
@@ -41,6 +40,7 @@ SEED_SPECIES=aspergillus_fumigatus
 
 IFS=,
 SPECIES="Aspergillus fumigatus"
+SEQCENTER=SeqCoast
 sed -n ${N}p $SAMPFILE | while read STRAIN NANOPORE ILLUMINA LOCUSTAG
 do
     echo "STRAIN is $STRAIN LOCUSTAG is $LOCUSTAG"
