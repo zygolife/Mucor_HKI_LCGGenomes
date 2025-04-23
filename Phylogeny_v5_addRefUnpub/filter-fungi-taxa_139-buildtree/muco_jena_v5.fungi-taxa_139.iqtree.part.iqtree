@@ -1,0 +1,774 @@
+IQ-TREE 2.2.2.6 COVID-edition built May 27 2023
+
+Partition file name: muco_jena_v5.fungi-taxa_139.iqtree.part
+Input file name: mucor_jena_v5.fungi-taxa_139.fa
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 595848
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 139 taxa with 50 partitions and 54810 total sites (6.53278% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	137	1779	1064	950	738	738	105401at4751.cds.mfa
+   2	DNA	123	1548	763	651	810	810	148293at4751.cds.mfa
+   3	DNA	125	1386	727	628	664	664	160995at4751.cds.mfa
+   4	DNA	129	1329	822	712	527	527	171238at4751.cds.mfa
+   5	DNA	130	1185	571	524	621	621	184762at4751.cds.mfa
+   6	DNA	132	1188	735	660	487	487	211634at4751.cds.mfa
+   7	DNA	129	2934	2302	2084	681	681	21689at4751.cds.mfa
+   8	DNA	122	1197	634	546	578	578	219236at4751.cds.mfa
+   9	DNA	131	3405	2219	1971	1253	1253	22982at4751.cds.mfa
+  10	DNA	131	1008	712	595	321	321	235463at4751.cds.mfa
+  11	DNA	130	1149	722	658	458	458	251158at4751.cds.mfa
+  12	DNA	122	4593	4157	3774	559	559	25161at4751.cds.mfa
+  13	DNA	128	1503	1300	1146	266	266	265325at4751.cds.mfa
+  14	DNA	128	1041	631	552	440	440	269389at4751.cds.mfa
+  15	DNA	134	912	826	812	77	77	272081at4751.cds.mfa
+  16	DNA	137	924	645	578	309	309	280937at4751.cds.mfa
+  17	DNA	132	954	728	639	254	254	299559at4751.cds.mfa
+  18	DNA	132	1032	696	631	347	347	315551at4751.cds.mfa
+  19	DNA	132	978	646	552	347	347	327884at4751.cds.mfa
+  20	DNA	138	777	482	437	302	302	331763at4751.cds.mfa
+  21	DNA	132	969	698	654	285	285	334424at4751.cds.mfa
+  22	DNA	130	948	566	496	392	392	335719at4751.cds.mfa
+  23	DNA	128	921	767	715	176	176	337917at4751.cds.mfa
+  24	DNA	127	723	617	578	122	122	338301at4751.cds.mfa
+  25	DNA	128	1152	880	766	301	301	343603at4751.cds.mfa
+  26	DNA	125	834	506	469	319	319	349264at4751.cds.mfa
+  27	DNA	139	915	536	508	377	377	351482at4751.cds.mfa
+  28	DNA	126	678	494	428	206	206	351849at4751.cds.mfa
+  29	DNA	137	1539	1238	1153	282	282	353991at4751.cds.mfa
+  30	DNA	138	609	301	265	305	305	377787at4751.cds.mfa
+  31	DNA	134	591	375	332	233	233	410986at4751.cds.mfa
+  32	DNA	137	585	477	397	139	139	410991at4751.cds.mfa
+  33	DNA	129	738	473	417	284	284	418680at4751.cds.mfa
+  34	DNA	138	465	276	246	196	196	428342at4751.cds.mfa
+  35	DNA	134	588	379	340	226	226	428774at4751.cds.mfa
+  36	DNA	108	825	622	496	225	225	432952at4751.cds.mfa
+  37	DNA	132	852	731	685	131	131	434984at4751.cds.mfa
+  38	DNA	119	444	316	292	99	99	444174at4751.cds.mfa
+  39	DNA	135	393	229	199	182	182	444399at4751.cds.mfa
+  40	DNA	135	732	593	573	146	146	447112at4751.cds.mfa
+  41	DNA	130	453	409	379	67	67	452573at4751.cds.mfa
+  42	DNA	132	444	319	247	132	132	452759at4751.cds.mfa
+  43	DNA	139	447	304	270	146	146	453693at4751.cds.mfa
+  44	DNA	139	444	221	173	234	234	469452at4751.cds.mfa
+  45	DNA	96	363	267	236	112	112	473814at4751.cds.mfa
+  46	DNA	139	366	212	176	164	164	474374at4751.cds.mfa
+  47	DNA	133	780	583	447	241	241	481052at4751.cds.mfa
+  48	DNA	135	423	312	283	118	118	494427at4751.cds.mfa
+  49	DNA	132	2286	1671	1531	651	651	50786at4751.cds.mfa
+  50	DNA	134	2481	2148	2024	355	355	62846at4751.cds.mfa
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-equal partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  GTR+F+I+G4     1.0000  GTR{3.05231,7.06932,2.14914,1.85032,14.7024}+F{0.233088,0.223933,0.247806,0.295172}+I{0.332713}+G4{0.664685}
+   2  GTR+F+I+G4     1.0000  GTR{2.81599,14.6171,3.13634,1.44592,19.568}+F{0.259074,0.215278,0.206975,0.318672}+I{0.410672}+G4{0.602584}
+   3  GTR+F+I+G4     1.0000  GTR{4.61331,14.0208,2.82145,2.64596,22.4791}+F{0.256499,0.201251,0.228686,0.313563}+I{0.364883}+G4{0.540677}
+   4  GTR+F+I+G4     1.0000  GTR{3.37938,10.4,2.46485,2.29124,18.3285}+F{0.25564,0.220563,0.223692,0.300105}+I{0.270135}+G4{0.523144}
+   5  GTR+F+I+G4     1.0000  GTR{2.68354,10.34,1.91279,2.04401,18.3825}+F{0.303791,0.177268,0.232184,0.286757}+I{0.396637}+G4{0.619808}
+   6  GTR+F+I+G4     1.0000  GTR{4.16644,14.0576,2.59137,2.11177,17.1019}+F{0.226069,0.223218,0.226345,0.324369}+I{0.333769}+G4{0.726248}
+   7  GTR+F+I+G4     1.0000  GTR{2.32002,4.99418,1.51839,1.51808,8.483}+F{0.307047,0.199218,0.201723,0.292011}+I{0.174447}+G4{0.825259}
+   8  GTR+F+I+G4     1.0000  GTR{3.30368,11.4919,2.61654,2.43503,21.0299}+F{0.282839,0.182325,0.229778,0.305058}+I{0.3742}+G4{0.620256}
+   9  GTR+F+I+G4     1.0000  GTR{2.65537,9.12124,1.88478,2.10915,16.2702}+F{0.263649,0.207816,0.218076,0.310459}+I{0.266288}+G4{0.642032}
+  10  GTR+F+I+G4     1.0000  GTR{2.53037,8.95892,2.5049,2.40786,14.2639}+F{0.277612,0.202664,0.218266,0.301459}+I{0.235376}+G4{0.587453}
+  11  GTR+F+I+G4     1.0000  GTR{4.62636,9.96178,2.63523,2.38769,20.0061}+F{0.300209,0.183811,0.232825,0.283155}+I{0.312353}+G4{0.720571}
+  12  GTR+F+I+G4     1.0000  GTR{1.41273,3.02314,1.26519,1.31094,4.4383}+F{0.349547,0.194464,0.209204,0.246784}+I{0.121705}+G4{0.851795}
+  13  GTR+F+I+G4     1.0000  GTR{1.99154,4.91286,1.61983,1.5921,7.19434}+F{0.218308,0.260564,0.220047,0.301081}+I{0.11231}+G4{0.782236}
+  14  GTR+F+I+G4     1.0000  GTR{1.6513,10.2051,1.61401,2.16752,14.9086}+F{0.28702,0.205899,0.184773,0.322308}+I{0.322422}+G4{0.640487}
+  15  GTR+F+I+G4     1.0000  GTR{1.71754,3.02849,1.6612,1.62043,5.71896}+F{0.298916,0.182951,0.240006,0.278127}+I{0.0511539}+G4{1.42407}
+  16  GTR+F+I+G4     1.0000  GTR{2.69127,6.71143,1.94264,1.65467,9.97284}+F{0.235458,0.233936,0.231964,0.298641}+I{0.266716}+G4{0.744517}
+  17  GTR+F+I+G4     1.0000  GTR{2.46481,5.75063,1.64225,2.04299,12.6066}+F{0.325586,0.184582,0.223692,0.266139}+I{0.17919}+G4{0.666708}
+  18  GTR+F+I+G4     1.0000  GTR{3.61817,9.07517,2.63034,1.98411,12.309}+F{0.242912,0.219433,0.23167,0.305985}+I{0.278409}+G4{0.743206}
+  19  GTR+F+I+G4     1.0000  GTR{1.19413,2.38344,0.713875,0.613171,5.37966}+F{0.204328,0.269163,0.224019,0.30249}+I{0.241068}+G4{0.580573}
+  20  GTR+F+I+G4     1.0000  GTR{2.2547,5.85292,3.70059,3.13056,14.0864}+F{0.20556,0.248818,0.247766,0.297857}+I{0.298039}+G4{0.676328}
+  21  GTR+F+I+G4     1.0000  GTR{1.53251,3.1711,1.34991,1.00792,3.83069}+F{0.288096,0.205292,0.196585,0.310026}+I{0.203367}+G4{0.995896}
+  22  GTR+F+I+G4     1.0000  GTR{3.56806,9.79045,2.92921,2.09838,14.9407}+F{0.232766,0.209433,0.229397,0.328404}+I{0.302942}+G4{0.572988}
+  23  GTR+F+I+G4     1.0000  GTR{1.42027,2.07252,1.08569,1.13607,3.22035}+F{0.333646,0.212717,0.20129,0.252347}+I{0.160445}+G4{0.456907}
+  24  GTR+F+I+G4     1.0000  GTR{1.51945,2.45639,1.29162,1.60914,3.84995}+F{0.342047,0.22201,0.191024,0.244919}+I{0.115145}+G4{1.15377}
+  25  GTR+F+I+G4     1.0000  GTR{2.48276,7.2036,1.86715,1.97203,11.1164}+F{0.25851,0.198545,0.21983,0.323115}+I{0.209261}+G4{0.743721}
+  26  GTR+F+I+G4     1.0000  GTR{3.75176,8.50974,2.85305,1.81867,14.8716}+F{0.266753,0.182315,0.228143,0.322788}+I{0.296492}+G4{0.608676}
+  27  GTR+F+I+G4     1.0000  GTR{3.60634,10.7748,2.91258,1.98814,12.681}+F{0.254334,0.215025,0.218836,0.311806}+I{0.3364}+G4{0.668956}
+  28  GTR+F+I+G4     1.0000  GTR{3.17998,8.80504,2.49531,2.86378,15.9735}+F{0.300423,0.202513,0.201993,0.295071}+I{0.224386}+G4{0.659361}
+  29  GTR+F+I+G4     1.0000  GTR{2.09558,3.37088,1.33926,1.69053,6.72839}+F{0.278948,0.234568,0.230779,0.255705}+I{0.113655}+G4{0.786736}
+  30  GTR+F+I+G4     1.0000  GTR{0.851433,9.46705,1.14848,0.998984,16.2055}+F{0.224182,0.267014,0.217492,0.291311}+I{0.332725}+G4{0.425448}
+  31  GTR+F+I+G4     1.0000  GTR{2.15386,5.90929,1.24415,1.87745,8.44032}+F{0.324608,0.187243,0.193636,0.294513}+I{0.310144}+G4{0.710395}
+  32  GTR+F+I+G4     1.0000  GTR{2.28807,5.14016,2.00596,2.23044,10.7297}+F{0.258061,0.222555,0.225581,0.293802}+I{0.15502}+G4{0.668945}
+  33  GTR+F+I+G4     1.0000  GTR{3.67211,12.9477,2.94232,3.2068,20.546}+F{0.307549,0.19482,0.206615,0.291016}+I{0.278954}+G4{0.588038}
+  34  GTR+F+I+G4     1.0000  GTR{4.04463,12.07,1.74487,3.14922,31.092}+F{0.245798,0.266571,0.218659,0.268973}+I{0.403735}+G4{0.615621}
+  35  GTR+F+I+G4     1.0000  GTR{4.40698,13.391,3.094,3.47869,27.0355}+F{0.299412,0.188831,0.21196,0.299797}+I{0.282715}+G4{0.674062}
+  36  GTR+F+I+G4     1.0000  GTR{2.69985,5.53343,1.69716,1.27639,12.3978}+F{0.351028,0.170962,0.243647,0.234363}+I{0.182985}+G4{0.630408}
+  37  GTR+F+I+G4     1.0000  GTR{1.48065,2.04434,1.38944,1.35553,3.39807}+F{0.404337,0.164953,0.21279,0.21792}+I{0.153754}+G4{0.333213}
+  38  GTR+F+I+G4     1.0000  GTR{1.85295,4.03289,1.24033,1.41025,7.40653}+F{0.353119,0.162449,0.226121,0.258311}+I{0.119169}+G4{0.489895}
+  39  GTR+F+I+G4     1.0000  GTR{3.01395,7.99106,3.05428,1.19815,18.426}+F{0.280319,0.186533,0.246736,0.286412}+I{0.363185}+G4{0.560784}
+  40  GTR+F+I+G4     1.0000  GTR{1.84847,2.87183,1.81471,1.6134,4.28013}+F{0.313185,0.223874,0.192691,0.27025}+I{0.145266}+G4{1.2674}
+  41  GTR+F+I+G4     1.0000  GTR{1.21102,2.47062,1.18171,1.7651,4.09738}+F{0.362467,0.171507,0.222988,0.243038}+I{0.0998741}+G4{1.05632}
+  42  GTR+F+I+G4     1.0000  GTR{2.21666,7.19159,1.61062,1.191,15.5169}+F{0.341033,0.145689,0.248694,0.264584}+I{0.151741}+G4{0.476499}
+  43  GTR+F+I+G4     1.0000  GTR{1.52219,2.96502,1.04648,0.868317,8.94184}+F{0.258651,0.280492,0.208947,0.25191}+I{0.194994}+G4{0.570855}
+  44  GTR+F+I+G4     1.0000  GTR{2.00407,14.2241,2.74643,0.791385,75.7089}+F{0.228674,0.262556,0.229805,0.278965}+I{0.421633}+G4{0.490101}
+  45  GTR+F+I+G4     1.0000  GTR{2.31955,5.34007,1.24892,1.63981,6.53766}+F{0.257288,0.208462,0.171447,0.362803}+I{0.222631}+G4{0.945994}
+  46  HKY+F+I+G4     1.0000  HKY{5.33326}+F{0.251025,0.28015,0.210534,0.258291}+I{0.264147}+G4{0.393065}
+  47  GTR+F+I+G4     1.0000  GTR{3.43569,6.71665,1.90545,1.6973,11.0784}+F{0.254911,0.214385,0.235991,0.294713}+I{0.218279}+G4{0.659196}
+  48  GTR+F+I+G4     1.0000  GTR{1.63762,4.37766,0.939017,2.51672,7.83924}+F{0.220853,0.224638,0.232065,0.322444}+I{0.173926}+G4{0.799275}
+  49  GTR+F+I+G4     1.0000  GTR{2.09138,6.17853,2.19826,2.01828,11.7348}+F{0.276349,0.218972,0.223097,0.281582}+I{0.208585}+G4{0.811033}
+  50  GTR+F+I+G4     1.0000  GTR{1.97531,2.28191,1.4021,1.88269,3.14168}+F{0.29812,0.205675,0.217506,0.2787}+I{0.143086}+G4{0.309286}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -2266621.8916 (s.e. 9945.5945)
+Unconstrained log-likelihood (without tree): -330994.3934
+Number of free parameters (#branches + #model parameters): 771
+Akaike information criterion (AIC) score: 4534785.7832
+Corrected Akaike information criterion (AICc) score: 4534807.8126
+Bayesian information criterion (BIC) score: 4541656.6483
+
+Total tree length (sum of branch lengths): 30.1006
+Sum of internal branch lengths: 11.7947 (39.1843% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Absidia_caerulea_NRRL1315.cds-transcripts' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++---------------------------------Absidia_caerulea_NRRL1315.cds-transcripts
+|
+|                                                +--Actinomucor_elegans_CBS_100.09.cds-transcripts
+|                                           +----| (100/100)
+|                                           |    +--Actinomucor_elegans_var._kuwaitensis_CBS_117697.cds-transcripts
+|                                        +--| (100/100)
+|                                        |  |              +---Mucor_lanceolatus_CBS_638.74.cds-transcripts
+|                                        |  |        +-----| (100/100)
+|                                        |  |        |     +--Mucor_petrinsularis_var._echinosporus_NRRL_3141.cds-transcripts
+|                                        |  |     +--| (100/100)
+|                                        |  |     |  +--Zygorhynchus_exponens_var._smithii_NRRL_2572T.cds-transcripts
+|                                        |  |  +--| (100/100)
+|                                        |  |  |  +--Zygorhynchus_exponens_NRRL_1492.cds-transcripts
+|                                        |  +--| (100/100)
+|                                        |     +---Mucor_laxorrhizus_NRRL_2814.cds-transcripts
+|                                   +----| (100/100)
+|                                   |    +-----Mucor_circinatus_URM7218.cds-transcripts
+|                                +--| (100/98)
+|                                |  |                       +--Ellisomyces_anomalus_CBS_243.57.cds-transcripts
+|                                |  |                    +--| (100/100)
+|                                |  |                    |  +--Ellisomyces_anomalus_NRRL_2465_Plus-T.cds-transcripts
+|                                |  |                 +--| (100/55)
+|                                |  |                 |  |        +--Mucor_amethystinus_CBS_526.68.cds-transcripts
+|                                |  |                 |  |     +--| (100/100)
+|                                |  |                 |  |     |  +--Mucor_sp._NRZ_2022-0058.cds-transcripts
+|                                |  |                 |  |  +--| (100/100)
+|                                |  |                 |  |  |  +--Mucor_circinelloides_f._griseocyanus_NRRL_3621.cds-transcripts
+|                                |  |                 |  +--| (99.8/55)
+|                                |  |                 |     |  +---Mucor_bainieri_CBS_293.63.cds-transcripts
+|                                |  |                 |     +--| (100/97)
+|                                |  |                 |        +--Mucor_pseudocircinelloides_CBS_541.78.cds-transcripts
+|                                |  |              +--| (85.6/79)
+|                                |  |              |  |     +--Mucor_circinelloides_f._lusitanicus_NRRL_3629.cds-transcripts
+|                                |  |              |  |  +--| (100/100)
+|                                |  |              |  |  |  +--Mucor_ramosissimus_NRRL_3042.cds-transcripts
+|                                |  |              |  +--| (100/100)
+|                                |  |              |     +--Mucor_variicolumellatus_CBS_236.35.cds-transcripts
+|                                |  |           +--| (99.8/97)
+|                                |  |           |  |     +--Mucor_pseudolusitanicus_CBS_540.78.cds-transcripts
+|                                |  |           |  |  +--| (100/100)
+|                                |  |           |  |  |  +--Mucor_sp._aff._variicolumellatus_CBS_338.71.cds-transcripts
+|                                |  |           |  +--| (100/100)
+|                                |  |           |     +--Mucor_sp._aff._variicolumellatus_CBS_635.65.cds-transcripts
+|                                |  |        +--| (100/100)
+|                                |  |        |  |  +--Mucor_circinelloides_f._janssenii_NRRL_2404.cds-transcripts
+|                                |  |        |  +--| (100/100)
+|                                |  |        |     +--Mucor_velutinosus_CBS_762.74.cds-transcripts
+|                                |  |     +--| (100/100)
+|                                |  |     |  |  +--Mucor_circinelloides_f._circinelloides_NRRL_3614.cds-transcripts
+|                                |  |     |  +--| (100/100)
+|                                |  |     |     +--Mucor_ctenidius_NRRL_2929T.cds-transcripts
+|                                |  +-----| (100/100)
+|                                |        |                 +--Mucor_brunneogriseus_CBS_129.41.cds-transcripts
+|                                |        |              +--| (100/100)
+|                                |        |              |  +--Mucor_globosus_NRRL_1436.cds-transcripts
+|                                |        |           +--| (83.7/84)
+|                                |        |           |  +--Mucor_plumbeus_NRRL_2353.cds-transcripts
+|                                |        |        +--| (100/100)
+|                                |        |        |  +--Mucor_racemosus_NRRL_1627.cds-transcripts
+|                                |        |     +--| (86.1/95)
+|                                |        |     |  +--------Mucor_mousanensis_NRRL_3105.cds-transcripts
+|                                |        |  +--| (100/100)
+|                                |        |  |  |  +--Mucor_philippovi_NRRL_3036.cds-transcripts
+|                                |        |  |  +--| (100/100)
+|                                |        |  |     +-----Mucor_sp._nov._CBS_206.69.cds-transcripts
+|                                |        +--| (100/100)
+|                                |           |            +--Parasitella_parasitica_Bainier_Sydow_NRRL_1461.cds-transcripts
+|                                |           |       +----| (100/100)
+|                                |           |       |    +--Parasitella_parasitica_NRRL_2501.cds-transcripts
+|                                |           |  +----| (100/100)
+|                                |           |  |    +--------Parasitella_simplex_NRRL_1460.cds-transcripts
+|                                |           +--| (100/100)
+|                                |              +--------Chaetocladium_brefeldii_NRRL_1350.cds-transcripts
+|                             +--| (65.2/67)
+|                             |  |  +------------------Mucor_gigasporus_CBS_566.91.cds-transcripts
+|                             |  +--| (100/98)
+|                             |     +------Mucor_guilliermondii_CBS_174.27.cds-transcripts
+|                          +--| (100/100)
+|                          |  |                  +---Benjaminiella_multispora_CBS_421.70.cds-transcripts
+|                          |  |           +------| (100/100)
+|                          |  |           |      |   +--Benjaminiella_poitrasii_RSA_903.cds-transcripts
+|                          |  |           |      +---| (100/100)
+|                          |  |           |          +--Benjaminiella_youngii_IMI_325629.cds-transcripts
+|                          |  |  +--------| (100/100)
+|                          |  |  |        +---------Cokeromyces_recurvatus_NRRL_2243.cds-transcripts
+|                          |  +--| (100/100)
+|                          |     |                           +--Kirkomyces_cordensis_CBS_223.63.cds-transcripts
+|                          |     |                    +------| (100/100)
+|                          |     |                    |      +--Mucor_cordense_RSA_1222.cds-transcripts
+|                          |     |                 +--| (100/100)
+|                          |     |                 |  +----Mucor_ardhlaengiktus_CBS_210.80.cds-transcripts
+|                          |     |              +--| (99.8/98)
+|                          |     |              |  +----------Mucor_ucrainicus_CBS_221.71.cds-transcripts
+|                          |     |           +--| (96/77)
+|                          |     |           |  |  +--------Mucor_amphibiorum_CBS_763.74.cds-transcripts
+|                          |     |           |  +--| (99.5/77)
+|                          |     |           |     |  +-------------Mucor_falcatus_CBS_251.35.cds-transcripts
+|                          |     |           |     +--| (100/100)
+|                          |     |           |        |  +-------Mucor_indicus_Lendner_NRRL_13132.cds-transcripts
+|                          |     |           |        +--| (100/100)
+|                          |     |           |           +-----Mucor_luteus_var._indica_NRRL_3245.cds-transcripts
+|                          |     |        +--| (97.9/98)
+|                          |     |        |  |   +------Mucor_inaequisporus_NRRL_3626.cds-transcripts
+|                          |     |        |  +---| (100/100)
+|                          |     |        |      +-----Mucor_nederlandicus_CBS_735.70.cds-transcripts
+|                          |     |     +--| (100/100)
+|                          |     |     |  |  +------Mucor_azygosporus_Benjamin_NRRL_3068.cds-transcripts
+|                          |     |     |  +--| (100/100)
+|                          |     |     |     +----Mucor_prayagensis_CBS_816.70.cds-transcripts
+|                          |     |  +--| (100/100)
+|                          |     |  |  |  +-------------Mucor_odoratus_NRRL_3064.cds-transcripts
+|                          |     |  |  +--| (100/100)
+|                          |     |  |     +-----------Mucor_zychae_var._zychae_NRRL_3243.cds-transcripts
+|                          |     +--| (46.5/63)
+|                          |        |                   +--------Mycotypha_indica_IMI_211999.cds-transcripts
+|                          |        +-------------------| (100/100)
+|                          |                            +-------Mycotypha_microspora_Fenner_NRRL_684.cds-transcripts
+|                       +--| (99.6/97)
+|                       |  |              +---Blakeslea_trispora_NRRL_2456.cds-transcripts
+|                       |  |           +--| (100/100)
+|                       |  |           |  |  +--Choanephora_cucurbitarum_KUS-F28377.cds-transcripts
+|                       |  |           |  +--| (100/100)
+|                       |  |           |     +--Choanephora_infundibulifera_CBS_156.58.cds-transcripts
+|                       |  |      +----| (100/100)
+|                       |  |      |    +------Choanephora_circinans_NRRL_2546.cds-transcripts
+|                       |  +------| (100/100)
+|                       |         +-------Gilbertella_persicaria_var_persicaria_CBS_190.cds-transcripts
+|                    +--| (100/100)
+|                    |  |                            +--Circinella_rigida_NRRL_2341.cds-transcripts
+|                    |  |                 +----------| (100/100)
+|                    |  |                 |          +--Mucor_abundans_CBS_388.35.cds-transcripts
+|                    |  |              +--| (100/97)
+|                    |  |              |  +----Mucor_hiemalis_f._silvaticus_NRRL_3643.cds-transcripts
+|                    |  |           +--| (100/97)
+|                    |  |           |  |          +--Mucor_moelleri_f._californiensis_CBS_402.58.cds-transcripts
+|                    |  |           |  |  +-------| (100/100)
+|                    |  |           |  |  |       +--Zygorhynchus_moelleri_Vuillemin_NRRL_1497.cds-transcripts
+|                    |  |           |  +--| (100/100)
+|                    |  |           |     +------Mucor_zonatus_CBS_148.69.cds-transcripts
+|                    |  |        +--| (100/97)
+|                    |  |        |  |  +------Mucor_bacilliformis_CBS_251.53.cds-transcripts
+|                    |  |        |  +--| (100/100)
+|                    |  |        |     |        +--Mucor_megalocarpus_CBS_215.27.cds-transcripts
+|                    |  |        |     |     +--| (100/100)
+|                    |  |        |     |     |  +--Mucor_multiplex_CBS_110662.cds-transcripts
+|                    |  |        |     |  +--| (100/100)
+|                    |  |        |     |  |  +--Zygorhynchus_sp._NRRL_3102.cds-transcripts
+|                    |  |        |     +--| (100/100)
+|                    |  |        |        +------Zygorhynchus_heterogamus_Vuillemin_NRRL_1489.cds-transcripts
+|                    |  |     +--| (56.9/79)
+|                    |  |     |  |                     +--Helicostylum_pulchrum_RSA_2065.cds-transcripts
+|                    |  |     |  |                  +--| (100/100)
+|                    |  |     |  |                  |  +--Thamnidium_elegans_NRRL_2467.cds-transcripts
+|                    |  |     |  |               +--| (99.8/97)
+|                    |  |     |  |               |  +----Pirella_circinans_CBS_962.68.cds-transcripts
+|                    |  |     |  |            +--| (100/100)
+|                    |  |     |  |            |  |     +--Mucor_aligarensis_NRRL_3099.cds-transcripts
+|                    |  |     |  |            |  |  +--| (100/100)
+|                    |  |     |  |            |  |  |  |  +--Mucor_flavus_CBS_126.70.cds-transcripts
+|                    |  |     |  |            |  |  |  +--| (100/100)
+|                    |  |     |  |            |  |  |     +--Mucor_flavus_CBS_234.35.cds-transcripts
+|                    |  |     |  |            |  +--| (100/98)
+|                    |  |     |  |            |     +----Mucor_flavus_CBS_210.71.cds-transcripts
+|                    |  |     |  |         +--| (75.7/90)
+|                    |  |     |  |         |  |  +----Mucor_griseo-ochraceus_var._minuta_NRRL_3246.cds-transcripts
+|                    |  |     |  |         |  +--| (100/100)
+|                    |  |     |  |         |     +--Mucor_saturninus_CBS_974.60.cds-transcripts
+|                    |  |     |  |      +--| (100/100)
+|                    |  |     |  |      |  |   +--Pilaira_anomala_CBS_695.68.cds-transcripts
+|                    |  |     |  |      |  +---| (100/100)
+|                    |  |     |  |      |      |  +--Pilaira_caucasica_CBS_523.68.cds-transcripts
+|                    |  |     |  |      |      +--| (100/100)
+|                    |  |     |  |      |         +--Pilaira_moreaui_CBS_181.26.cds-transcripts
+|                    |  |     |  |  +---| (100/100)
+|                    |  |     |  |  |   |   +--Mucor_flavus_CBS_230.35.cds-transcripts
+|                    |  |     |  |  |   +---| (100/100)
+|                    |  |     |  |  |       +--Mucor_flavus_CBS_893.73.cds-transcripts
+|                    |  |     |  +--| (100/100)
+|                    |  |     |     |              +--Mucor_koreanus_EML-QT1.cds-transcripts
+|                    |  |     |     |           +--| (100/100)
+|                    |  |     |     |           |  +--Mucor_piriformis_NRRL_3318.cds-transcripts
+|                    |  |     |     |        +--| (100/100)
+|                    |  |     |     |        |  +--Mucor_sp._aff._piriformis_CBS_125018.cds-transcripts
+|                    |  |     |     |     +--| (100/100)
+|                    |  |     |     |     |  |   +--Mucor_mucedo_NRRL_3635.cds-transcripts
+|                    |  |     |     |     |  +---| (100/100)
+|                    |  |     |     |     |      +--Mucor_sp._aff._mucedo_CBS_122.23.cds-transcripts
+|                    |  |     |     |  +--| (100/100)
+|                    |  |     |     |  |  +---Mucor_strictus_CBS_576.66.cds-transcripts
+|                    |  |     |     +--| (100/100)
+|                    |  |     |        +-----Mucor_plasmaticus_NRRL_2708.cds-transcripts
+|                    |  |  +--| (100/100)
+|                    |  |  |  |        +------Mucor_endophyticus_CBS_385.95.cds-transcripts
+|                    |  |  |  |     +--| (99.6/100)
+|                    |  |  |  |     |  |  +---Mucor_hiemalis_f._corticola_NRRL_3617.cds-transcripts
+|                    |  |  |  |     |  +--| (100/100)
+|                    |  |  |  |     |     +----Mucor_hiemalis_f._hiemalis_NRRL_3624.cds-transcripts
+|                    |  |  |  |  +--| (100/100)
+|                    |  |  |  |  |  +-----------Mucor_luteus_NRRL_2865.cds-transcripts
+|                    |  |  |  +--| (100/100)
+|                    |  |  |     |  +------Mucor_irregularis_CBS_700.71.cds-transcripts
+|                    |  |  |     +--| (100/100)
+|                    |  |  |        +----Mucor_merdicola_URM7223.cds-transcripts
+|                    |  +--| (99.6/98)
+|                    |     |                     +---Mucor_microsporus_CBS_204.28.cds-transcripts
+|                    |     +---------------------| (100/100)
+|                    |                           +---Mucor_microsporus_OTU100.cds-transcripts
+|                 +--| (95.5/95)
+|                 |  |               +-----Rhizopus_caespitosus_CBS_427.87.cds-transcripts
+|                 |  |         +-----| (100/100)
+|                 |  |         |     |  +-------Rhizopus_homothallicus_CBS_336.62.cds-transcripts
+|                 |  |         |     +--| (94.7/99)
+|                 |  |         |        +---------Rhizopus_rhizopodiformis_NRRL_2570.cds-transcripts
+|                 |  +---------| (100/100)
+|                 |            |       +----------Rhizopus_circinans_NRRL_2913.cds-transcripts
+|                 |            |  +----| (100/100)
+|                 |            |  |    |               +--Rhizopus_nigricans_Ehrenberg_NRRL_1477.cds-transcripts
+|                 |            |  |    |            +--| (100/100)
+|                 |            |  |    |            |  +--Rhizopus_stolonifer_NRRL_66455.cds-transcripts
+|                 |            |  |    |         +--| (100/100)
+|                 |            |  |    |         |  +--Rhizopus_stolonifer_NRRL_66460.cds-transcripts
+|                 |            |  |    |     +---| (100/100)
+|                 |            |  |    |     |   +--Rhizopus_sexualis_CBS_336.39.cds-transcripts
+|                 |            |  |    |  +--| (99.7/100)
+|                 |            |  |    |  |  |            +--Syzygites_megalocarpus_CBS_372.39.cds-transcripts
+|                 |            |  |    |  |  +------------| (100/100)
+|                 |            |  |    |  |               |  +--Syzygites_megalocarpus_MES_1450.cds-transcripts
+|                 |            |  |    |  |               +--| (100/100)
+|                 |            |  |    |  |                  +--Syzygites_sp._MES_3091.cds-transcripts
+|                 |            |  |    +--| (100/100)
+|                 |            |  |       |                +--Sporodiniella_umbellata_CBS_195.77.cds-transcripts
+|                 |            |  |       +----------------| (100/100)
+|                 |            |  |                        +--Sporodiniella_umbellata_FLAS-F-62758.cds-transcripts
+|                 |            +--| (100/100)
+|                 |               +----------Rhizopus_oryzae_NRRL_3133.cds-transcripts
+|              +--| (100/100)
+|              |  |      +---------------------Pilobolus_umbonatus_NRRL_6349.cds-transcripts
+|              |  +------| (100/100)
+|              |         +----------------------Utharomyces_epallocaulus_CBS_329.73.cds-transcripts
++--------------| (100/100)
+|              |                      +------Backusella_circina_NRRL_2446.cds-transcripts
+|              |                   +--| (100/100)
+|              |                   |  |  +----Backusella_gigaspora_CBS_538.80.cds-transcripts
+|              |                   |  +--| (100/100)
+|              |                   |     |  +--Backusella_lamprospora_NRRL_3300.cds-transcripts
+|              |                   |     +--| (100/100)
+|              |                   |        +--Mucor_dispersus_NRRL_6046.cds-transcripts
+|              |                +--| (100/100)
+|              |                |  |  +---------Backusella_grandis_CBS_186.87.cds-transcripts
+|              |                |  +--| (100/100)
+|              |                |     +-----Mucor_recurvus_var._indicus_NRRL_3247.cds-transcripts
+|              |     +----------| (100/100)
+|              |     |          |     +--Backusella_variabilis_CBS_564.66.cds-transcripts
+|              |     |          |  +--| (100/100)
+|              |     |          |  |  +--Mucor_lamprosporus_NRRL_6040.cds-transcripts
+|              |     |          +--| (100/100)
+|              |     |             +--Mucor_recurvus_NRRL_2358.cds-transcripts
+|              |  +--| (100/100)
+|              |  |  +-------------Backusella_oblongielliptica_CBS_568.70.cds-transcripts
+|              +--| (100/100)
+|                 +------------Backusella_oblongispora_CBS_569.70.cds-transcripts
+|
+|                      +--------------------Dichotomocladium_robustum_RSA_2353plus.cds-transcripts
+|                 +----| (100/100)
+|                 |    |               +-----Lichtheimia_corymbifera_NRRL_6379.cds-transcripts
+|                 |    +---------------| (100/100)
+|                 |                    +--------Lichtheimia_ramosa_NRRL_3208.cds-transcripts
+|       +---------| (100/100)
+|       |         |          +-----------Fennellomyces_linderi_CBS_158.54.cds-transcripts
+|       |         +----------| (100/100)
+|       |                    +-----------Zychaea_mexicana_RSA_1403.cds-transcripts
+|    +--| (91.9/98)
+|    |  |                         +--------------------Lentamyces_parricidus_NRRL2409.cds-transcripts
+|    |  +-------------------------| (100/100)
+|    |                            +------------------------Lentamyces_zychae_NRRL_2806.cds-transcripts
++----| (100/100)
+     +---------------------------Rhizomucor_pusillus_NRRL_2543.cds-transcripts
+
+Tree in newick format:
+
+(Absidia_caerulea_NRRL1315.cds-transcripts:0.8031375013,(((((((((((Actinomucor_elegans_CBS_100.09.cds-transcripts:0.0246128158,Actinomucor_elegans_var._kuwaitensis_CBS_117697.cds-transcripts:0.0109531538)100/100:0.1264965875,((((Mucor_lanceolatus_CBS_638.74.cds-transcripts:0.1057458470,Mucor_petrinsularis_var._echinosporus_NRRL_3141.cds-transcripts:0.0406668692)100/100:0.1476553864,Zygorhynchus_exponens_var._smithii_NRRL_2572T.cds-transcripts:0.0161010800)100/100:0.0212177683,Zygorhynchus_exponens_NRRL_1492.cds-transcripts:0.0088885690)100/100:0.0476069887,Mucor_laxorrhizus_NRRL_2814.cds-transcripts:0.0975940448)100/100:0.0509108236)100/100:0.0459401383,Mucor_circinatus_URM7218.cds-transcripts:0.1484365418)100/100:0.1193245600,(((((((Ellisomyces_anomalus_CBS_243.57.cds-transcripts:0.0036617776,Ellisomyces_anomalus_NRRL_2465_Plus-T.cds-transcripts:0.0020042687)100/100:0.0684245898,(((Mucor_amethystinus_CBS_526.68.cds-transcripts:0.0443206663,Mucor_sp._NRZ_2022-0058.cds-transcripts:0.0657664597)100/100:0.0091541995,Mucor_circinelloides_f._griseocyanus_NRRL_3621.cds-transcripts:0.0502978700)100/100:0.0197745082,(Mucor_bainieri_CBS_293.63.cds-transcripts:0.0976767667,Mucor_pseudocircinelloides_CBS_541.78.cds-transcripts:0.0870330276)100/97:0.0166698241)99.8/55:0.0101965121)100/55:0.0093947052,((Mucor_circinelloides_f._lusitanicus_NRRL_3629.cds-transcripts:0.0576925536,Mucor_ramosissimus_NRRL_3042.cds-transcripts:0.0546687477)100/100:0.0345355831,Mucor_variicolumellatus_CBS_236.35.cds-transcripts:0.0788723511)100/100:0.0262842793)85.6/79:0.0082501597,((Mucor_pseudolusitanicus_CBS_540.78.cds-transcripts:0.0579404282,Mucor_sp._aff._variicolumellatus_CBS_338.71.cds-transcripts:0.0553370555)100/100:0.0347891555,Mucor_sp._aff._variicolumellatus_CBS_635.65.cds-transcripts:0.0638189372)100/100:0.0241010224)99.8/97:0.0096822269,(Mucor_circinelloides_f._janssenii_NRRL_2404.cds-transcripts:0.0243125118,Mucor_velutinosus_CBS_762.74.cds-transcripts:0.0409735261)100/100:0.0402472921)100/100:0.0413830345,(Mucor_circinelloides_f._circinelloides_NRRL_3614.cds-transcripts:0.0425393959,Mucor_ctenidius_NRRL_2929T.cds-transcripts:0.0521828288)100/100:0.0433647412)100/100:0.0766234226,((((((Mucor_brunneogriseus_CBS_129.41.cds-transcripts:0.0282880624,Mucor_globosus_NRRL_1436.cds-transcripts:0.0854295943)100/100:0.0293598472,Mucor_plumbeus_NRRL_2353.cds-transcripts:0.0599711665)83.7/84:0.0111984203,Mucor_racemosus_NRRL_1627.cds-transcripts:0.0391418080)100/100:0.0667322670,Mucor_mousanensis_NRRL_3105.cds-transcripts:0.2170673445)86.1/95:0.0183576700,(Mucor_philippovi_NRRL_3036.cds-transcripts:0.0915577081,Mucor_sp._nov._CBS_206.69.cds-transcripts:0.1478535651)100/100:0.0640237011)100/100:0.0170151218,(((Parasitella_parasitica_Bainier_Sydow_NRRL_1461.cds-transcripts:0.0031134973,Parasitella_parasitica_NRRL_2501.cds-transcripts:0.0023824678)100/100:0.1346239655,Parasitella_simplex_NRRL_1460.cds-transcripts:0.2173868801)100/100:0.1213292033,Chaetocladium_brefeldii_NRRL_1350.cds-transcripts:0.2167086458)100/100:0.0347586207)100/100:0.0222564244)100/100:0.1588386708)100/98:0.0259290515,(Mucor_gigasporus_CBS_566.91.cds-transcripts:0.4544145371,Mucor_guilliermondii_CBS_174.27.cds-transcripts:0.1832492744)100/98:0.0880563085)65.2/67:0.0134498925,(((Benjaminiella_multispora_CBS_421.70.cds-transcripts:0.1121553948,(Benjaminiella_poitrasii_RSA_903.cds-transcripts:0.0157123816,Benjaminiella_youngii_IMI_325629.cds-transcripts:0.0142466147)100/100:0.1009149487)100/100:0.1813711771,Cokeromyces_recurvatus_NRRL_2243.cds-transcripts:0.2401832976)100/100:0.2164854629,((((((((Kirkomyces_cordensis_CBS_223.63.cds-transcripts:0.0069208624,Mucor_cordense_RSA_1222.cds-transcripts:0.0021245235)100/100:0.1625792318,Mucor_ardhlaengiktus_CBS_210.80.cds-transcripts:0.1186103966)100/100:0.0493287200,Mucor_ucrainicus_CBS_221.71.cds-transcripts:0.2600747735)99.8/98:0.0212364617,(Mucor_amphibiorum_CBS_763.74.cds-transcripts:0.2075341004,(Mucor_falcatus_CBS_251.35.cds-transcripts:0.3433932539,(Mucor_indicus_Lendner_NRRL_13132.cds-transcripts:0.2057931832,Mucor_luteus_var._indica_NRRL_3245.cds-transcripts:0.1547956234)100/100:0.0348219043)100/100:0.0274928575)99.5/77:0.0194967042)96/77:0.0134312626,(Mucor_inaequisporus_NRRL_3626.cds-transcripts:0.1742850647,Mucor_nederlandicus_CBS_735.70.cds-transcripts:0.1478184704)100/100:0.0927532743)97.9/98:0.0178272211,(Mucor_azygosporus_Benjamin_NRRL_3068.cds-transcripts:0.1812483723,Mucor_prayagensis_CBS_816.70.cds-transcripts:0.1260674819)100/100:0.0789054482)100/100:0.0741667310,(Mucor_odoratus_NRRL_3064.cds-transcripts:0.3321692595,Mucor_zychae_var._zychae_NRRL_3243.cds-transcripts:0.2809612446)100/100:0.0415644408)100/100:0.0628804418,(Mycotypha_indica_IMI_211999.cds-transcripts:0.2094368182,Mycotypha_microspora_Fenner_NRRL_684.cds-transcripts:0.1974446359)100/100:0.4824190082)46.5/63:0.0331600441)100/100:0.0370804851)100/100:0.0463189276,(((Blakeslea_trispora_NRRL_2456.cds-transcripts:0.0993524630,(Choanephora_cucurbitarum_KUS-F28377.cds-transcripts:0.0444476830,Choanephora_infundibulifera_CBS_156.58.cds-transcripts:0.0402383605)100/100:0.0739725645)100/100:0.0429983919,Choanephora_circinans_NRRL_2546.cds-transcripts:0.1669207984)100/100:0.1194880587,Gilbertella_persicaria_var_persicaria_CBS_190.cds-transcripts:0.1941801683)100/100:0.1838174871)99.6/97:0.0189194968,(((((((Circinella_rigida_NRRL_2341.cds-transcripts:0.0827489296,Mucor_abundans_CBS_388.35.cds-transcripts:0.0862419754)100/100:0.2710280519,Mucor_hiemalis_f._silvaticus_NRRL_3643.cds-transcripts:0.1316479714)100/97:0.0340949282,((Mucor_moelleri_f._californiensis_CBS_402.58.cds-transcripts:0.0044219097,Zygorhynchus_moelleri_Vuillemin_NRRL_1497.cds-transcripts:0.0023444560)100/100:0.1944517662,Mucor_zonatus_CBS_148.69.cds-transcripts:0.1675653125)100/100:0.0746119167)100/97:0.0246923375,(Mucor_bacilliformis_CBS_251.53.cds-transcripts:0.1738071226,(((Mucor_megalocarpus_CBS_215.27.cds-transcripts:0.0419813938,Mucor_multiplex_CBS_110662.cds-transcripts:0.0351559794)100/100:0.0206685956,Zygorhynchus_sp._NRRL_3102.cds-transcripts:0.0693524038)100/100:0.0219388124,Zygorhynchus_heterogamus_Vuillemin_NRRL_1489.cds-transcripts:0.1634376008)100/100:0.0541481844)100/100:0.0258167141)100/97:0.0247192113,(((((((Helicostylum_pulchrum_RSA_2065.cds-transcripts:0.0634068500,Thamnidium_elegans_NRRL_2467.cds-transcripts:0.0477770539)100/100:0.0455055462,Pirella_circinans_CBS_962.68.cds-transcripts:0.1176646672)99.8/97:0.0191853142,((Mucor_aligarensis_NRRL_3099.cds-transcripts:0.0397113289,(Mucor_flavus_CBS_126.70.cds-transcripts:0.0105202642,Mucor_flavus_CBS_234.35.cds-transcripts:0.0074798113)100/100:0.0214963070)100/100:0.0655491379,Mucor_flavus_CBS_210.71.cds-transcripts:0.1250260387)100/98:0.0233975438)100/100:0.0571262578,(Mucor_griseo-ochraceus_var._minuta_NRRL_3246.cds-transcripts:0.1162727650,Mucor_saturninus_CBS_974.60.cds-transcripts:0.0918725374)100/100:0.0527624656)75.7/90:0.0111219268,(Pilaira_anomala_CBS_695.68.cds-transcripts:0.0883440883,(Pilaira_caucasica_CBS_523.68.cds-transcripts:0.0057090324,Pilaira_moreaui_CBS_181.26.cds-transcripts:0.0031503587)100/100:0.0779309416)100/100:0.1012491594)100/100:0.0453367930,(Mucor_flavus_CBS_230.35.cds-transcripts:0.0162211186,Mucor_flavus_CBS_893.73.cds-transcripts:0.0091841140)100/100:0.1126203306)100/100:0.0963890884,(((((Mucor_koreanus_EML-QT1.cds-transcripts:0.0134655058,Mucor_piriformis_NRRL_3318.cds-transcripts:0.0117722803)100/100:0.0680231720,Mucor_sp._aff._piriformis_CBS_125018.cds-transcripts:0.0876372324)100/100:0.0693820942,(Mucor_mucedo_NRRL_3635.cds-transcripts:0.0518826292,Mucor_sp._aff._mucedo_CBS_122.23.cds-transcripts:0.0663192795)100/100:0.1065520373)100/100:0.0432546930,Mucor_strictus_CBS_576.66.cds-transcripts:0.1018385550)100/100:0.0343700609,Mucor_plasmaticus_NRRL_2708.cds-transcripts:0.1579308151)100/100:0.0565567128)100/100:0.0713078448)56.9/79:0.0167795778,(((Mucor_endophyticus_CBS_385.95.cds-transcripts:0.1812981978,(Mucor_hiemalis_f._corticola_NRRL_3617.cds-transcripts:0.1093533690,Mucor_hiemalis_f._hiemalis_NRRL_3624.cds-transcripts:0.1183752759)100/100:0.0573624845)99.6/100:0.0170681419,Mucor_luteus_NRRL_2865.cds-transcripts:0.2911880954)100/100:0.0239331905,(Mucor_irregularis_CBS_700.71.cds-transcripts:0.1743884644,Mucor_merdicola_URM7223.cds-transcripts:0.1306674415)100/100:0.0678107395)100/100:0.0664037810)100/100:0.0787663675,(Mucor_microsporus_CBS_204.28.cds-transcripts:0.1114458525,Mucor_microsporus_OTU100.cds-transcripts:0.1096292855)100/100:0.5204465956)99.6/98:0.0268366343)100/100:0.0545317003,((Rhizopus_caespitosus_CBS_427.87.cds-transcripts:0.1596954111,(Rhizopus_homothallicus_CBS_336.62.cds-transcripts:0.2025611987,Rhizopus_rhizopodiformis_NRRL_2570.cds-transcripts:0.2321119495)94.7/99:0.0385778165)100/100:0.1608892303,((Rhizopus_circinans_NRRL_2913.cds-transcripts:0.2564912222,(((((Rhizopus_nigricans_Ehrenberg_NRRL_1477.cds-transcripts:0.0076189331,Rhizopus_stolonifer_NRRL_66455.cds-transcripts:0.0053616351)100/100:0.0517057498,Rhizopus_stolonifer_NRRL_66460.cds-transcripts:0.0714680471)100/100:0.0331971946,Rhizopus_sexualis_CBS_336.39.cds-transcripts:0.0617743758)100/100:0.1148545720,(Syzygites_megalocarpus_CBS_372.39.cds-transcripts:0.0466509547,(Syzygites_megalocarpus_MES_1450.cds-transcripts:0.0117816260,Syzygites_sp._MES_3091.cds-transcripts:0.0069857748)100/100:0.0147546133)100/100:0.3105087633)99.7/100:0.0334856351,(Sporodiniella_umbellata_CBS_195.77.cds-transcripts:0.0031373156,Sporodiniella_umbellata_FLAS-F-62758.cds-transcripts:0.0075147592)100/100:0.4010074344)100/100:0.0685983721)100/100:0.1184430987,Rhizopus_oryzae_NRRL_3133.cds-transcripts:0.2538342355)100/100:0.0549127371)100/100:0.2378372322)95.5/95:0.0288240205,(Pilobolus_umbonatus_NRRL_6349.cds-transcripts:0.5223848511,Utharomyces_epallocaulus_CBS_329.73.cds-transcripts:0.5448633750)100/100:0.1681172356)100/100:0.0387511654,(((((Backusella_circina_NRRL_2446.cds-transcripts:0.1725678019,(Backusella_gigaspora_CBS_538.80.cds-transcripts:0.1198665281,(Backusella_lamprospora_NRRL_3300.cds-transcripts:0.0672968268,Mucor_dispersus_NRRL_6046.cds-transcripts:0.0605609577)100/100:0.0869622259)100/100:0.0370653512)100/100:0.0693673327,(Backusella_grandis_CBS_186.87.cds-transcripts:0.2329061903,Mucor_recurvus_var._indicus_NRRL_3247.cds-transcripts:0.1487072815)100/100:0.0551568016)100/100:0.0371466570,((Backusella_variabilis_CBS_564.66.cds-transcripts:0.0508438820,Mucor_lamprosporus_NRRL_6040.cds-transcripts:0.0224120561)100/100:0.0717115983,Mucor_recurvus_NRRL_2358.cds-transcripts:0.0857851038)100/100:0.0887312170)100/100:0.2693077758,Backusella_oblongielliptica_CBS_568.70.cds-transcripts:0.3387107073)100/100:0.0719038615,Backusella_oblongispora_CBS_569.70.cds-transcripts:0.2997014589)100/100:0.0446307570)100/100:0.3581373242,((((Dichotomocladium_robustum_RSA_2353plus.cds-transcripts:0.4882096637,(Lichtheimia_corymbifera_NRRL_6379.cds-transcripts:0.1404067822,Lichtheimia_ramosa_NRRL_3208.cds-transcripts:0.2107028292)100/100:0.3834110244)100/100:0.1361050364,(Fennellomyces_linderi_CBS_158.54.cds-transcripts:0.2871526535,Zychaea_mexicana_RSA_1403.cds-transcripts:0.2832368128)100/100:0.2545434353)100/100:0.2399100342,(Lentamyces_parricidus_NRRL2409.cds-transcripts:0.4924509612,Lentamyces_zychae_NRRL_2806.cds-transcripts:0.5898226908)100/100:0.6046678775)91.9/98:0.0684177575,Rhizomucor_pusillus_NRRL_2543.cds-transcripts:0.6441665842)100/100:0.1164589601);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -2266621.891721
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++---------------------------------Absidia_caerulea_NRRL1315.cds-transcripts
+|
+|                                                +--Actinomucor_elegans_CBS_100.09.cds-transcripts
+|                                           +----| (100)
+|                                           |    +--Actinomucor_elegans_var._kuwaitensis_CBS_117697.cds-transcripts
+|                                        +--| (100)
+|                                        |  |              +---Mucor_lanceolatus_CBS_638.74.cds-transcripts
+|                                        |  |        +-----| (100)
+|                                        |  |        |     +--Mucor_petrinsularis_var._echinosporus_NRRL_3141.cds-transcripts
+|                                        |  |     +--| (100)
+|                                        |  |     |  +--Zygorhynchus_exponens_var._smithii_NRRL_2572T.cds-transcripts
+|                                        |  |  +--| (100)
+|                                        |  |  |  +--Zygorhynchus_exponens_NRRL_1492.cds-transcripts
+|                                        |  +--| (100)
+|                                        |     +---Mucor_laxorrhizus_NRRL_2814.cds-transcripts
+|                                   +----| (100)
+|                                   |    +-----Mucor_circinatus_URM7218.cds-transcripts
+|                                +--| (98)
+|                                |  |                       +--Ellisomyces_anomalus_CBS_243.57.cds-transcripts
+|                                |  |                    +--| (100)
+|                                |  |                    |  +--Ellisomyces_anomalus_NRRL_2465_Plus-T.cds-transcripts
+|                                |  |                 +--| (55)
+|                                |  |                 |  |        +--Mucor_amethystinus_CBS_526.68.cds-transcripts
+|                                |  |                 |  |     +--| (100)
+|                                |  |                 |  |     |  +--Mucor_sp._NRZ_2022-0058.cds-transcripts
+|                                |  |                 |  |  +--| (100)
+|                                |  |                 |  |  |  +--Mucor_circinelloides_f._griseocyanus_NRRL_3621.cds-transcripts
+|                                |  |                 |  +--| (55)
+|                                |  |                 |     |  +---Mucor_bainieri_CBS_293.63.cds-transcripts
+|                                |  |                 |     +--| (97)
+|                                |  |                 |        +--Mucor_pseudocircinelloides_CBS_541.78.cds-transcripts
+|                                |  |              +--| (79)
+|                                |  |              |  |     +--Mucor_circinelloides_f._lusitanicus_NRRL_3629.cds-transcripts
+|                                |  |              |  |  +--| (100)
+|                                |  |              |  |  |  +--Mucor_ramosissimus_NRRL_3042.cds-transcripts
+|                                |  |              |  +--| (100)
+|                                |  |              |     +--Mucor_variicolumellatus_CBS_236.35.cds-transcripts
+|                                |  |           +--| (97)
+|                                |  |           |  |     +--Mucor_pseudolusitanicus_CBS_540.78.cds-transcripts
+|                                |  |           |  |  +--| (100)
+|                                |  |           |  |  |  +--Mucor_sp._aff._variicolumellatus_CBS_338.71.cds-transcripts
+|                                |  |           |  +--| (100)
+|                                |  |           |     +--Mucor_sp._aff._variicolumellatus_CBS_635.65.cds-transcripts
+|                                |  |        +--| (100)
+|                                |  |        |  |  +--Mucor_circinelloides_f._janssenii_NRRL_2404.cds-transcripts
+|                                |  |        |  +--| (100)
+|                                |  |        |     +--Mucor_velutinosus_CBS_762.74.cds-transcripts
+|                                |  |     +--| (100)
+|                                |  |     |  |  +--Mucor_circinelloides_f._circinelloides_NRRL_3614.cds-transcripts
+|                                |  |     |  +--| (100)
+|                                |  |     |     +--Mucor_ctenidius_NRRL_2929T.cds-transcripts
+|                                |  +-----| (100)
+|                                |        |                 +--Mucor_brunneogriseus_CBS_129.41.cds-transcripts
+|                                |        |              +--| (100)
+|                                |        |              |  +--Mucor_globosus_NRRL_1436.cds-transcripts
+|                                |        |           +--| (84)
+|                                |        |           |  +--Mucor_plumbeus_NRRL_2353.cds-transcripts
+|                                |        |        +--| (100)
+|                                |        |        |  +--Mucor_racemosus_NRRL_1627.cds-transcripts
+|                                |        |     +--| (95)
+|                                |        |     |  +--------Mucor_mousanensis_NRRL_3105.cds-transcripts
+|                                |        |  +--| (100)
+|                                |        |  |  |  +--Mucor_philippovi_NRRL_3036.cds-transcripts
+|                                |        |  |  +--| (100)
+|                                |        |  |     +-----Mucor_sp._nov._CBS_206.69.cds-transcripts
+|                                |        +--| (100)
+|                                |           |            +--Parasitella_parasitica_Bainier_Sydow_NRRL_1461.cds-transcripts
+|                                |           |       +----| (100)
+|                                |           |       |    +--Parasitella_parasitica_NRRL_2501.cds-transcripts
+|                                |           |  +----| (100)
+|                                |           |  |    +--------Parasitella_simplex_NRRL_1460.cds-transcripts
+|                                |           +--| (100)
+|                                |              +--------Chaetocladium_brefeldii_NRRL_1350.cds-transcripts
+|                             +--| (67)
+|                             |  |  +------------------Mucor_gigasporus_CBS_566.91.cds-transcripts
+|                             |  +--| (98)
+|                             |     +------Mucor_guilliermondii_CBS_174.27.cds-transcripts
+|                          +--| (100)
+|                          |  |                  +---Benjaminiella_multispora_CBS_421.70.cds-transcripts
+|                          |  |           +------| (100)
+|                          |  |           |      |   +--Benjaminiella_poitrasii_RSA_903.cds-transcripts
+|                          |  |           |      +---| (100)
+|                          |  |           |          +--Benjaminiella_youngii_IMI_325629.cds-transcripts
+|                          |  |  +--------| (100)
+|                          |  |  |        +---------Cokeromyces_recurvatus_NRRL_2243.cds-transcripts
+|                          |  +--| (100)
+|                          |     |                           +--Kirkomyces_cordensis_CBS_223.63.cds-transcripts
+|                          |     |                    +------| (100)
+|                          |     |                    |      +--Mucor_cordense_RSA_1222.cds-transcripts
+|                          |     |                 +--| (100)
+|                          |     |                 |  +----Mucor_ardhlaengiktus_CBS_210.80.cds-transcripts
+|                          |     |              +--| (98)
+|                          |     |              |  +----------Mucor_ucrainicus_CBS_221.71.cds-transcripts
+|                          |     |           +--| (77)
+|                          |     |           |  |  +--------Mucor_amphibiorum_CBS_763.74.cds-transcripts
+|                          |     |           |  +--| (77)
+|                          |     |           |     |  +-------------Mucor_falcatus_CBS_251.35.cds-transcripts
+|                          |     |           |     +--| (100)
+|                          |     |           |        |  +-------Mucor_indicus_Lendner_NRRL_13132.cds-transcripts
+|                          |     |           |        +--| (100)
+|                          |     |           |           +-----Mucor_luteus_var._indica_NRRL_3245.cds-transcripts
+|                          |     |        +--| (98)
+|                          |     |        |  |   +------Mucor_inaequisporus_NRRL_3626.cds-transcripts
+|                          |     |        |  +---| (100)
+|                          |     |        |      +-----Mucor_nederlandicus_CBS_735.70.cds-transcripts
+|                          |     |     +--| (100)
+|                          |     |     |  |  +------Mucor_azygosporus_Benjamin_NRRL_3068.cds-transcripts
+|                          |     |     |  +--| (100)
+|                          |     |     |     +----Mucor_prayagensis_CBS_816.70.cds-transcripts
+|                          |     |  +--| (100)
+|                          |     |  |  |  +-------------Mucor_odoratus_NRRL_3064.cds-transcripts
+|                          |     |  |  +--| (100)
+|                          |     |  |     +-----------Mucor_zychae_var._zychae_NRRL_3243.cds-transcripts
+|                          |     +--| (63)
+|                          |        |                   +--------Mycotypha_indica_IMI_211999.cds-transcripts
+|                          |        +-------------------| (100)
+|                          |                            +-------Mycotypha_microspora_Fenner_NRRL_684.cds-transcripts
+|                       +--| (97)
+|                       |  |              +---Blakeslea_trispora_NRRL_2456.cds-transcripts
+|                       |  |           +--| (100)
+|                       |  |           |  |  +--Choanephora_cucurbitarum_KUS-F28377.cds-transcripts
+|                       |  |           |  +--| (100)
+|                       |  |           |     +--Choanephora_infundibulifera_CBS_156.58.cds-transcripts
+|                       |  |      +----| (100)
+|                       |  |      |    +------Choanephora_circinans_NRRL_2546.cds-transcripts
+|                       |  +------| (100)
+|                       |         +-------Gilbertella_persicaria_var_persicaria_CBS_190.cds-transcripts
+|                    +--| (100)
+|                    |  |                            +--Circinella_rigida_NRRL_2341.cds-transcripts
+|                    |  |                 +----------| (100)
+|                    |  |                 |          +--Mucor_abundans_CBS_388.35.cds-transcripts
+|                    |  |              +--| (97)
+|                    |  |              |  +----Mucor_hiemalis_f._silvaticus_NRRL_3643.cds-transcripts
+|                    |  |           +--| (97)
+|                    |  |           |  |          +--Mucor_moelleri_f._californiensis_CBS_402.58.cds-transcripts
+|                    |  |           |  |  +-------| (100)
+|                    |  |           |  |  |       +--Zygorhynchus_moelleri_Vuillemin_NRRL_1497.cds-transcripts
+|                    |  |           |  +--| (100)
+|                    |  |           |     +------Mucor_zonatus_CBS_148.69.cds-transcripts
+|                    |  |        +--| (97)
+|                    |  |        |  |  +------Mucor_bacilliformis_CBS_251.53.cds-transcripts
+|                    |  |        |  +--| (100)
+|                    |  |        |     |        +--Mucor_megalocarpus_CBS_215.27.cds-transcripts
+|                    |  |        |     |     +--| (100)
+|                    |  |        |     |     |  +--Mucor_multiplex_CBS_110662.cds-transcripts
+|                    |  |        |     |  +--| (100)
+|                    |  |        |     |  |  +--Zygorhynchus_sp._NRRL_3102.cds-transcripts
+|                    |  |        |     +--| (100)
+|                    |  |        |        +------Zygorhynchus_heterogamus_Vuillemin_NRRL_1489.cds-transcripts
+|                    |  |     +--| (79)
+|                    |  |     |  |                     +--Helicostylum_pulchrum_RSA_2065.cds-transcripts
+|                    |  |     |  |                  +--| (100)
+|                    |  |     |  |                  |  +--Thamnidium_elegans_NRRL_2467.cds-transcripts
+|                    |  |     |  |               +--| (97)
+|                    |  |     |  |               |  +----Pirella_circinans_CBS_962.68.cds-transcripts
+|                    |  |     |  |            +--| (100)
+|                    |  |     |  |            |  |     +--Mucor_aligarensis_NRRL_3099.cds-transcripts
+|                    |  |     |  |            |  |  +--| (100)
+|                    |  |     |  |            |  |  |  |  +--Mucor_flavus_CBS_126.70.cds-transcripts
+|                    |  |     |  |            |  |  |  +--| (100)
+|                    |  |     |  |            |  |  |     +--Mucor_flavus_CBS_234.35.cds-transcripts
+|                    |  |     |  |            |  +--| (98)
+|                    |  |     |  |            |     +----Mucor_flavus_CBS_210.71.cds-transcripts
+|                    |  |     |  |         +--| (90)
+|                    |  |     |  |         |  |  +----Mucor_griseo-ochraceus_var._minuta_NRRL_3246.cds-transcripts
+|                    |  |     |  |         |  +--| (100)
+|                    |  |     |  |         |     +--Mucor_saturninus_CBS_974.60.cds-transcripts
+|                    |  |     |  |      +--| (100)
+|                    |  |     |  |      |  |   +--Pilaira_anomala_CBS_695.68.cds-transcripts
+|                    |  |     |  |      |  +---| (100)
+|                    |  |     |  |      |      |  +--Pilaira_caucasica_CBS_523.68.cds-transcripts
+|                    |  |     |  |      |      +--| (100)
+|                    |  |     |  |      |         +--Pilaira_moreaui_CBS_181.26.cds-transcripts
+|                    |  |     |  |  +---| (100)
+|                    |  |     |  |  |   |   +--Mucor_flavus_CBS_230.35.cds-transcripts
+|                    |  |     |  |  |   +---| (100)
+|                    |  |     |  |  |       +--Mucor_flavus_CBS_893.73.cds-transcripts
+|                    |  |     |  +--| (100)
+|                    |  |     |     |              +--Mucor_koreanus_EML-QT1.cds-transcripts
+|                    |  |     |     |           +--| (100)
+|                    |  |     |     |           |  +--Mucor_piriformis_NRRL_3318.cds-transcripts
+|                    |  |     |     |        +--| (100)
+|                    |  |     |     |        |  +--Mucor_sp._aff._piriformis_CBS_125018.cds-transcripts
+|                    |  |     |     |     +--| (100)
+|                    |  |     |     |     |  |   +--Mucor_mucedo_NRRL_3635.cds-transcripts
+|                    |  |     |     |     |  +---| (100)
+|                    |  |     |     |     |      +--Mucor_sp._aff._mucedo_CBS_122.23.cds-transcripts
+|                    |  |     |     |  +--| (100)
+|                    |  |     |     |  |  +---Mucor_strictus_CBS_576.66.cds-transcripts
+|                    |  |     |     +--| (100)
+|                    |  |     |        +-----Mucor_plasmaticus_NRRL_2708.cds-transcripts
+|                    |  |  +--| (100)
+|                    |  |  |  |        +------Mucor_endophyticus_CBS_385.95.cds-transcripts
+|                    |  |  |  |     +--| (100)
+|                    |  |  |  |     |  |  +---Mucor_hiemalis_f._corticola_NRRL_3617.cds-transcripts
+|                    |  |  |  |     |  +--| (100)
+|                    |  |  |  |     |     +----Mucor_hiemalis_f._hiemalis_NRRL_3624.cds-transcripts
+|                    |  |  |  |  +--| (100)
+|                    |  |  |  |  |  +-----------Mucor_luteus_NRRL_2865.cds-transcripts
+|                    |  |  |  +--| (100)
+|                    |  |  |     |  +------Mucor_irregularis_CBS_700.71.cds-transcripts
+|                    |  |  |     +--| (100)
+|                    |  |  |        +----Mucor_merdicola_URM7223.cds-transcripts
+|                    |  +--| (98)
+|                    |     |                     +---Mucor_microsporus_CBS_204.28.cds-transcripts
+|                    |     +---------------------| (100)
+|                    |                           +---Mucor_microsporus_OTU100.cds-transcripts
+|                 +--| (95)
+|                 |  |               +-----Rhizopus_caespitosus_CBS_427.87.cds-transcripts
+|                 |  |         +-----| (100)
+|                 |  |         |     |  +-------Rhizopus_homothallicus_CBS_336.62.cds-transcripts
+|                 |  |         |     +--| (99)
+|                 |  |         |        +---------Rhizopus_rhizopodiformis_NRRL_2570.cds-transcripts
+|                 |  +---------| (100)
+|                 |            |       +----------Rhizopus_circinans_NRRL_2913.cds-transcripts
+|                 |            |  +----| (100)
+|                 |            |  |    |               +--Rhizopus_nigricans_Ehrenberg_NRRL_1477.cds-transcripts
+|                 |            |  |    |            +--| (100)
+|                 |            |  |    |            |  +--Rhizopus_stolonifer_NRRL_66455.cds-transcripts
+|                 |            |  |    |         +--| (100)
+|                 |            |  |    |         |  +--Rhizopus_stolonifer_NRRL_66460.cds-transcripts
+|                 |            |  |    |     +---| (100)
+|                 |            |  |    |     |   +--Rhizopus_sexualis_CBS_336.39.cds-transcripts
+|                 |            |  |    |  +--| (100)
+|                 |            |  |    |  |  |            +--Syzygites_megalocarpus_CBS_372.39.cds-transcripts
+|                 |            |  |    |  |  +------------| (100)
+|                 |            |  |    |  |               |  +--Syzygites_megalocarpus_MES_1450.cds-transcripts
+|                 |            |  |    |  |               +--| (100)
+|                 |            |  |    |  |                  +--Syzygites_sp._MES_3091.cds-transcripts
+|                 |            |  |    +--| (100)
+|                 |            |  |       |                +--Sporodiniella_umbellata_CBS_195.77.cds-transcripts
+|                 |            |  |       +----------------| (100)
+|                 |            |  |                        +--Sporodiniella_umbellata_FLAS-F-62758.cds-transcripts
+|                 |            +--| (100)
+|                 |               +----------Rhizopus_oryzae_NRRL_3133.cds-transcripts
+|              +--| (100)
+|              |  |      +---------------------Pilobolus_umbonatus_NRRL_6349.cds-transcripts
+|              |  +------| (100)
+|              |         +----------------------Utharomyces_epallocaulus_CBS_329.73.cds-transcripts
++--------------| (100)
+|              |                      +------Backusella_circina_NRRL_2446.cds-transcripts
+|              |                   +--| (100)
+|              |                   |  |  +----Backusella_gigaspora_CBS_538.80.cds-transcripts
+|              |                   |  +--| (100)
+|              |                   |     |  +--Backusella_lamprospora_NRRL_3300.cds-transcripts
+|              |                   |     +--| (100)
+|              |                   |        +--Mucor_dispersus_NRRL_6046.cds-transcripts
+|              |                +--| (100)
+|              |                |  |  +---------Backusella_grandis_CBS_186.87.cds-transcripts
+|              |                |  +--| (100)
+|              |                |     +-----Mucor_recurvus_var._indicus_NRRL_3247.cds-transcripts
+|              |     +----------| (100)
+|              |     |          |     +--Backusella_variabilis_CBS_564.66.cds-transcripts
+|              |     |          |  +--| (100)
+|              |     |          |  |  +--Mucor_lamprosporus_NRRL_6040.cds-transcripts
+|              |     |          +--| (100)
+|              |     |             +--Mucor_recurvus_NRRL_2358.cds-transcripts
+|              |  +--| (100)
+|              |  |  +-------------Backusella_oblongielliptica_CBS_568.70.cds-transcripts
+|              +--| (100)
+|                 +------------Backusella_oblongispora_CBS_569.70.cds-transcripts
+|
+|                      +--------------------Dichotomocladium_robustum_RSA_2353plus.cds-transcripts
+|                 +----| (100)
+|                 |    |               +-----Lichtheimia_corymbifera_NRRL_6379.cds-transcripts
+|                 |    +---------------| (100)
+|                 |                    +--------Lichtheimia_ramosa_NRRL_3208.cds-transcripts
+|       +---------| (100)
+|       |         |          +-----------Fennellomyces_linderi_CBS_158.54.cds-transcripts
+|       |         +----------| (100)
+|       |                    +-----------Zychaea_mexicana_RSA_1403.cds-transcripts
+|    +--| (98)
+|    |  |                         +--------------------Lentamyces_parricidus_NRRL2409.cds-transcripts
+|    |  +-------------------------| (100)
+|    |                            +------------------------Lentamyces_zychae_NRRL_2806.cds-transcripts
++----| (100)
+     +---------------------------Rhizomucor_pusillus_NRRL_2543.cds-transcripts
+
+
+Consensus tree in newick format: 
+
+(Absidia_caerulea_NRRL1315.cds-transcripts:0.8031175742,(((((((((((Actinomucor_elegans_CBS_100.09.cds-transcripts:0.0246132245,Actinomucor_elegans_var._kuwaitensis_CBS_117697.cds-transcripts:0.0109535612)100:0.1264934894,((((Mucor_lanceolatus_CBS_638.74.cds-transcripts:0.1057440528,Mucor_petrinsularis_var._echinosporus_NRRL_3141.cds-transcripts:0.0406657976)100:0.1476528916,Zygorhynchus_exponens_var._smithii_NRRL_2572T.cds-transcripts:0.0161003502)100:0.0212168146,Zygorhynchus_exponens_NRRL_1492.cds-transcripts:0.0088875051)100:0.0476063963,Mucor_laxorrhizus_NRRL_2814.cds-transcripts:0.0975918189)100:0.0509103940)100:0.0459394270,Mucor_circinatus_URM7218.cds-transcripts:0.1484330130)100:0.1193218271,(((((((Ellisomyces_anomalus_CBS_243.57.cds-transcripts:0.0036617332,Ellisomyces_anomalus_NRRL_2465_Plus-T.cds-transcripts:0.0020042024)100:0.0684228331,(((Mucor_amethystinus_CBS_526.68.cds-transcripts:0.0443195725,Mucor_sp._NRZ_2022-0058.cds-transcripts:0.0657648577)100:0.0091536211,Mucor_circinelloides_f._griseocyanus_NRRL_3621.cds-transcripts:0.0502967742)100:0.0197742716,(Mucor_bainieri_CBS_293.63.cds-transcripts:0.0976742630,Mucor_pseudocircinelloides_CBS_541.78.cds-transcripts:0.0870303198)97:0.0166704953)55:0.0101959155)55:0.0093945879,((Mucor_circinelloides_f._lusitanicus_NRRL_3629.cds-transcripts:0.0576910075,Mucor_ramosissimus_NRRL_3042.cds-transcripts:0.0546673579)100:0.0345349453,Mucor_variicolumellatus_CBS_236.35.cds-transcripts:0.0788703744)100:0.0262834048)79:0.0082506652,((Mucor_pseudolusitanicus_CBS_540.78.cds-transcripts:0.0579390070,Mucor_sp._aff._variicolumellatus_CBS_338.71.cds-transcripts:0.0553353757)100:0.0347893035,Mucor_sp._aff._variicolumellatus_CBS_635.65.cds-transcripts:0.0638172316)100:0.0241000140)97:0.0096821569,(Mucor_circinelloides_f._janssenii_NRRL_2404.cds-transcripts:0.0243118814,Mucor_velutinosus_CBS_762.74.cds-transcripts:0.0409724974)100:0.0402459426)100:0.0413822052,(Mucor_circinelloides_f._circinelloides_NRRL_3614.cds-transcripts:0.0425393504,Mucor_ctenidius_NRRL_2929T.cds-transcripts:0.0521814282)100:0.0433646301)100:0.0766215504,((((((Mucor_brunneogriseus_CBS_129.41.cds-transcripts:0.0282862947,Mucor_globosus_NRRL_1436.cds-transcripts:0.0854274639)100:0.0293612221,Mucor_plumbeus_NRRL_2353.cds-transcripts:0.0599697613)84:0.0111985022,Mucor_racemosus_NRRL_1627.cds-transcripts:0.0391409388)100:0.0667303227,Mucor_mousanensis_NRRL_3105.cds-transcripts:0.2170606958)95:0.0183575168,(Mucor_philippovi_NRRL_3036.cds-transcripts:0.0915554793,Mucor_sp._nov._CBS_206.69.cds-transcripts:0.1478496747)100:0.0640229158)100:0.0170141083,(((Parasitella_parasitica_Bainier_Sydow_NRRL_1461.cds-transcripts:0.0031128507,Parasitella_parasitica_NRRL_2501.cds-transcripts:0.0023828118)100:0.1346206535,Parasitella_simplex_NRRL_1460.cds-transcripts:0.2173799791)100:0.1213254012,Chaetocladium_brefeldii_NRRL_1350.cds-transcripts:0.2166998110)100:0.0347609694)100:0.0222552449)100:0.1588342769)98:0.0259276537,(Mucor_gigasporus_CBS_566.91.cds-transcripts:0.4543774185,Mucor_guilliermondii_CBS_174.27.cds-transcripts:0.1831895250)98:0.0881243720)67:0.0134489731,(((Benjaminiella_multispora_CBS_421.70.cds-transcripts:0.1121590375,(Benjaminiella_poitrasii_RSA_903.cds-transcripts:0.0157111334,Benjaminiella_youngii_IMI_325629.cds-transcripts:0.0142463725)100:0.1009089570)100:0.1813663900,Cokeromyces_recurvatus_NRRL_2243.cds-transcripts:0.2401768848)100:0.2164797476,((((((((Kirkomyces_cordensis_CBS_223.63.cds-transcripts:0.0069205087,Mucor_cordense_RSA_1222.cds-transcripts:0.0021252323)100:0.1625750512,Mucor_ardhlaengiktus_CBS_210.80.cds-transcripts:0.1186081129)100:0.0493279536,Mucor_ucrainicus_CBS_221.71.cds-transcripts:0.2600681521)98:0.0212363540,(Mucor_amphibiorum_CBS_763.74.cds-transcripts:0.2075290076,(Mucor_falcatus_CBS_251.35.cds-transcripts:0.3433832603,(Mucor_indicus_Lendner_NRRL_13132.cds-transcripts:0.2057884489,Mucor_luteus_var._indica_NRRL_3245.cds-transcripts:0.1547912696)100:0.0348220275)100:0.0274926783)77:0.0194960015)77:0.0134296605,(Mucor_inaequisporus_NRRL_3626.cds-transcripts:0.1742811568,Mucor_nederlandicus_CBS_735.70.cds-transcripts:0.1478143566)100:0.0927519288)98:0.0178269905,(Mucor_azygosporus_Benjamin_NRRL_3068.cds-transcripts:0.1812445198,Mucor_prayagensis_CBS_816.70.cds-transcripts:0.1260637355)100:0.0789043815)100:0.0741638712,(Mucor_odoratus_NRRL_3064.cds-transcripts:0.3321584771,Mucor_zychae_var._zychae_NRRL_3243.cds-transcripts:0.2809516337)100:0.0415670397)100:0.0628788685,(Mycotypha_indica_IMI_211999.cds-transcripts:0.2094377044,Mycotypha_microspora_Fenner_NRRL_684.cds-transcripts:0.1974356206)100:0.4824035859)63:0.0331611065)100:0.0370792047)100:0.0463174615,(((Blakeslea_trispora_NRRL_2456.cds-transcripts:0.0993509571,(Choanephora_cucurbitarum_KUS-F28377.cds-transcripts:0.0444479291,Choanephora_infundibulifera_CBS_156.58.cds-transcripts:0.0402373694)100:0.0739713568)100:0.0429969377,Choanephora_circinans_NRRL_2546.cds-transcripts:0.1669190988)100:0.1194852258,Gilbertella_persicaria_var_persicaria_CBS_190.cds-transcripts:0.1941765814)100:0.1838129530)97:0.0189177502,(((((((Circinella_rigida_NRRL_2341.cds-transcripts:0.0827491421,Mucor_abundans_CBS_388.35.cds-transcripts:0.0862398631)100:0.2710226064,Mucor_hiemalis_f._silvaticus_NRRL_3643.cds-transcripts:0.1316448186)97:0.0340961691,((Mucor_moelleri_f._californiensis_CBS_402.58.cds-transcripts:0.0044214611,Zygorhynchus_moelleri_Vuillemin_NRRL_1497.cds-transcripts:0.0023447228)100:0.1944485092,Mucor_zonatus_CBS_148.69.cds-transcripts:0.1675629260)100:0.0746111034)97:0.0246918912,(Mucor_bacilliformis_CBS_251.53.cds-transcripts:0.1738039266,(((Mucor_megalocarpus_CBS_215.27.cds-transcripts:0.0419817044,Mucor_multiplex_CBS_110662.cds-transcripts:0.0351543669)100:0.0206679149,Zygorhynchus_sp._NRRL_3102.cds-transcripts:0.0693530251)100:0.0219382355,Zygorhynchus_heterogamus_Vuillemin_NRRL_1489.cds-transcripts:0.1634358886)100:0.0541477711)100:0.0258166409)97:0.0247199849,(((((((Helicostylum_pulchrum_RSA_2065.cds-transcripts:0.0634064496,Thamnidium_elegans_NRRL_2467.cds-transcripts:0.0477763193)100:0.0455046423,Pirella_circinans_CBS_962.68.cds-transcripts:0.1176639534)97:0.0191846301,((Mucor_aligarensis_NRRL_3099.cds-transcripts:0.0397101107,(Mucor_flavus_CBS_126.70.cds-transcripts:0.0105204591,Mucor_flavus_CBS_234.35.cds-transcripts:0.0074800843)100:0.0214962905)100:0.0655484077,Mucor_flavus_CBS_210.71.cds-transcripts:0.1250243310)98:0.0233980690)100:0.0571252676,(Mucor_griseo-ochraceus_var._minuta_NRRL_3246.cds-transcripts:0.1162718508,Mucor_saturninus_CBS_974.60.cds-transcripts:0.0918714647)100:0.0527615510)90:0.0111218292,(Pilaira_anomala_CBS_695.68.cds-transcripts:0.0883436587,(Pilaira_caucasica_CBS_523.68.cds-transcripts:0.0057087911,Pilaira_moreaui_CBS_181.26.cds-transcripts:0.0031509098)100:0.0779293127)100:0.1012483656)100:0.0453366249,(Mucor_flavus_CBS_230.35.cds-transcripts:0.0162205582,Mucor_flavus_CBS_893.73.cds-transcripts:0.0091841395)100:0.1126195224)100:0.0963875287,(((((Mucor_koreanus_EML-QT1.cds-transcripts:0.0134652926,Mucor_piriformis_NRRL_3318.cds-transcripts:0.0117718417)100:0.0680223662,Mucor_sp._aff._piriformis_CBS_125018.cds-transcripts:0.0876363723)100:0.0693815268,(Mucor_mucedo_NRRL_3635.cds-transcripts:0.0518814051,Mucor_sp._aff._mucedo_CBS_122.23.cds-transcripts:0.0663186731)100:0.1065511917)100:0.0432527153,Mucor_strictus_CBS_576.66.cds-transcripts:0.1018383281)100:0.0343697572,Mucor_plasmaticus_NRRL_2708.cds-transcripts:0.1579283271)100:0.0565566032)100:0.0713064178)79:0.0167798184,(((Mucor_endophyticus_CBS_385.95.cds-transcripts:0.1812949573,(Mucor_hiemalis_f._corticola_NRRL_3617.cds-transcripts:0.1093520501,Mucor_hiemalis_f._hiemalis_NRRL_3624.cds-transcripts:0.1183738954)100:0.0573616014)100:0.0170682101,Mucor_luteus_NRRL_2865.cds-transcripts:0.2911827944)100:0.0239327655,(Mucor_irregularis_CBS_700.71.cds-transcripts:0.1743856319,Mucor_merdicola_URM7223.cds-transcripts:0.1306649943)100:0.0678107209)100:0.0664028372)100:0.0787638439,(Mucor_microsporus_CBS_204.28.cds-transcripts:0.1114447268,Mucor_microsporus_OTU100.cds-transcripts:0.1096269107)100:0.5204356486)98:0.0268386924)100:0.0545301079,((Rhizopus_caespitosus_CBS_427.87.cds-transcripts:0.1596918765,(Rhizopus_homothallicus_CBS_336.62.cds-transcripts:0.2025554952,Rhizopus_rhizopodiformis_NRRL_2570.cds-transcripts:0.2321070460)99:0.0385781052)100:0.1608851215,((Rhizopus_circinans_NRRL_2913.cds-transcripts:0.2564855891,(((((Rhizopus_nigricans_Ehrenberg_NRRL_1477.cds-transcripts:0.0076194168,Rhizopus_stolonifer_NRRL_66455.cds-transcripts:0.0053617462)100:0.0517045867,Rhizopus_stolonifer_NRRL_66460.cds-transcripts:0.0714674714)100:0.0331969414,Rhizopus_sexualis_CBS_336.39.cds-transcripts:0.0617723664)100:0.1148513105,(Syzygites_megalocarpus_CBS_372.39.cds-transcripts:0.0466496091,(Syzygites_megalocarpus_MES_1450.cds-transcripts:0.0117815278,Syzygites_sp._MES_3091.cds-transcripts:0.0069852112)100:0.0147538376)100:0.3105028181)100:0.0334853490,(Sporodiniella_umbellata_CBS_195.77.cds-transcripts:0.0031365603,Sporodiniella_umbellata_FLAS-F-62758.cds-transcripts:0.0075149595)100:0.4009978091)100:0.0685976688)100:0.1184403356,Rhizopus_oryzae_NRRL_3133.cds-transcripts:0.2538284019)100:0.0549117715)100:0.2378310906)95:0.0288223418,(Pilobolus_umbonatus_NRRL_6349.cds-transcripts:0.5223694349,Utharomyces_epallocaulus_CBS_329.73.cds-transcripts:0.5448481408)100:0.1681195149)100:0.0387503014,(((((Backusella_circina_NRRL_2446.cds-transcripts:0.1725646884,(Backusella_gigaspora_CBS_538.80.cds-transcripts:0.1198652724,(Backusella_lamprospora_NRRL_3300.cds-transcripts:0.0672957739,Mucor_dispersus_NRRL_6046.cds-transcripts:0.0605600437)100:0.0869613587)100:0.0370644467)100:0.0693657503,(Backusella_grandis_CBS_186.87.cds-transcripts:0.2329014880,Mucor_recurvus_var._indicus_NRRL_3247.cds-transcripts:0.1487024948)100:0.0551597792)100:0.0371453811,((Backusella_variabilis_CBS_564.66.cds-transcripts:0.0508428904,Mucor_lamprosporus_NRRL_6040.cds-transcripts:0.0224107928)100:0.0717106679,Mucor_recurvus_NRRL_2358.cds-transcripts:0.0857843929)100:0.0887307138)100:0.2693016629,Backusella_oblongielliptica_CBS_568.70.cds-transcripts:0.3387040305)100:0.0719029744,Backusella_oblongispora_CBS_569.70.cds-transcripts:0.2996959113)100:0.0446304053)100:0.3581297500,((((Dichotomocladium_robustum_RSA_2353plus.cds-transcripts:0.4882007600,(Lichtheimia_corymbifera_NRRL_6379.cds-transcripts:0.1404061325,Lichtheimia_ramosa_NRRL_3208.cds-transcripts:0.2106978781)100:0.3833999869)100:0.1361037396,(Fennellomyces_linderi_CBS_158.54.cds-transcripts:0.2871504741,Zychaea_mexicana_RSA_1403.cds-transcripts:0.2832289790)100:0.2545396559)100:0.2399049897,(Lentamyces_parricidus_NRRL2409.cds-transcripts:0.4924425351,Lentamyces_zychae_NRRL_2806.cds-transcripts:0.5898081929)100:0.6046562527)98:0.0684173007,Rhizomucor_pusillus_NRRL_2543.cds-transcripts:0.6441507829)100:0.1164580824);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t muco_jena_v5.fungi-taxa_139.iqtree.part.treefile -q muco_jena_v5.fungi-taxa_139.iqtree.part.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s mucor_jena_v5.fungi-taxa_139.fa --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s mucor_jena_v5.fungi-taxa_139.fa --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue Apr 22 15:42:51 2025
+Total CPU time used: 18709.61965 seconds (5h:11m:49s)
+Total wall-clock time used: 6483.232973 seconds (1h:48m:3s)
+

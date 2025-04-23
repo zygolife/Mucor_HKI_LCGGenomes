@@ -1,0 +1,774 @@
+IQ-TREE 2.2.2.6 COVID-edition built May 27 2023
+
+Partition file name: pep-muco_jena_v5.fungi-taxa_139.iqtree.part
+Input file name: pep-muco_jena_v5.fungi-taxa_139.fa
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 391941
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 139 taxa with 50 partitions and 29540 total sites (4.37816% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	AA	133	523	429	337	143	143	103836at4751.aa.mfa
+   2	AA	138	593	350	225	313	313	105401at4751.aa.mfa
+   3	AA	127	1345	989	774	479	479	123228at4751.aa.mfa
+   4	AA	132	586	340	204	335	335	129160at4751.aa.mfa
+   5	AA	135	1708	1099	891	702	702	14441at4751.aa.mfa
+   6	AA	132	530	429	332	158	158	147028at4751.aa.mfa
+   7	AA	124	516	188	82	381	381	148293at4751.aa.mfa
+   8	AA	126	462	199	96	309	309	160995at4751.aa.mfa
+   9	AA	129	443	256	172	231	231	171238at4751.aa.mfa
+  10	AA	131	437	189	113	295	295	181959at4751.aa.mfa
+  11	AA	138	972	716	502	329	329	184718at4751.aa.mfa
+  12	AA	131	395	131	50	315	315	184762at4751.aa.mfa
+  13	AA	139	488	263	132	326	326	186574at4751.aa.mfa
+  14	AA	136	398	139	74	284	284	188070at4751.aa.mfa
+  15	AA	138	697	529	322	300	300	196841at4751.aa.mfa
+  16	AA	134	428	270	191	209	209	204087at4751.aa.mfa
+  17	AA	134	724	547	370	261	261	208463at4751.aa.mfa
+  18	AA	132	396	230	155	220	220	211634at4751.aa.mfa
+  19	AA	130	968	823	675	212	212	21689at4751.aa.mfa
+  20	AA	123	399	190	97	261	261	219236at4751.aa.mfa
+  21	AA	131	1135	743	545	491	491	22982at4751.aa.mfa
+  22	AA	130	383	231	173	191	191	251158at4751.aa.mfa
+  23	AA	128	610	503	413	143	143	256318at4751.aa.mfa
+  24	AA	135	343	229	144	167	167	262317at4751.aa.mfa
+  25	AA	130	347	239	130	177	177	269389at4751.aa.mfa
+  26	AA	138	391	263	180	183	183	299509at4751.aa.mfa
+  27	AA	138	259	146	108	136	136	331763at4751.aa.mfa
+  28	AA	135	323	233	175	137	137	334424at4751.aa.mfa
+  29	AA	129	278	167	109	142	142	349264at4751.aa.mfa
+  30	AA	139	305	154	117	171	171	351482at4751.aa.mfa
+  31	AA	138	245	124	59	153	153	351858at4751.aa.mfa
+  32	AA	124	2172	1623	1274	700	700	3534at4751.aa.mfa
+  33	AA	138	513	482	375	87	87	353991at4751.aa.mfa
+  34	AA	138	438	315	237	171	171	354778at4751.aa.mfa
+  35	AA	139	248	140	91	142	142	370952at4751.aa.mfa
+  36	AA	138	203	86	50	138	138	377787at4751.aa.mfa
+  37	AA	134	197	116	72	110	110	410986at4751.aa.mfa
+  38	AA	139	137	97	55	75	75	423166at4751.aa.mfa
+  39	AA	135	131	83	45	77	77	444399at4751.aa.mfa
+  40	AA	130	216	147	94	112	112	445401at4751.aa.mfa
+  41	AA	130	151	149	130	15	15	452573at4751.aa.mfa
+  42	AA	139	148	74	28	102	102	469452at4751.aa.mfa
+  43	AA	137	1168	878	707	353	353	48708at4751.aa.mfa
+  44	AA	132	762	584	489	226	226	50786at4751.aa.mfa
+  45	AA	139	1016	930	733	201	201	50835at4751.aa.mfa
+  46	AA	135	1269	731	536	631	631	57081at4751.aa.mfa
+  47	AA	134	827	741	633	132	132	62846at4751.aa.mfa
+  48	AA	136	958	709	540	324	324	73771at4751.aa.mfa
+  49	AA	130	602	367	239	311	311	79294at4751.aa.mfa
+  50	AA	137	757	505	409	311	311	98739at4751.aa.mfa
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-equal partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  LG+I+G4        1.0000  LG+I{0.152628}+G4{0.406216}
+   2  LG+I+G4        1.0000  LG+I{0.36552}+G4{0.463109}
+   3  VT+I+G4        1.0000  VT+I{0.274111}+G4{0.633896}
+   4  LG+I+G4        1.0000  LG+I{0.478529}+G4{0.39367}
+   5  WAG+I+G4       1.0000  WAG+I{0.284803}+G4{0.605716}
+   6  JTT+I+G4       1.0000  JTT+I{1.00014e-06}+G4{0.280388}
+   7  LG+I+G4        1.0000  LG+I{0.567612}+G4{0.358144}
+   8  LG+I+G4        1.0000  LG+I{0.430714}+G4{0.223275}
+   9  LG+I+G4        1.0000  LG+I{0.406111}+G4{0.51497}
+  10  JTT+I+G4       1.0000  JTT+I{0.513234}+G4{0.362928}
+  11  JTT+I+G4       1.0000  JTT+I{0.198097}+G4{0.478308}
+  12  LG+I+G4        1.0000  LG+I{0.470728}+G4{0.125931}
+  13  LG+I+G4        1.0000  LG+I{0.436598}+G4{0.297392}
+  14  JTT+I+G4       1.0000  JTT+I{0.578971}+G4{0.349779}
+  15  VT+I+G4        1.0000  VT+I{0.425855}+G4{0.563334}
+  16  LG+I+G4        1.0000  LG+I{0.327389}+G4{0.501322}
+  17  WAG+I+G4       1.0000  WAG+I{0.242732}+G4{0.554139}
+  18  LG+I+G4        1.0000  LG+I{0.400694}+G4{0.451353}
+  19  VT+I+G4        1.0000  VT+I{0.120689}+G4{0.635684}
+  20  LG+I+G4        1.0000  LG+I{0.373884}+G4{0.220957}
+  21  LG+I+G4        1.0000  LG+I{0.212869}+G4{0.414079}
+  22  LG+I+G4        1.0000  LG+I{0.365509}+G4{0.490174}
+  23  WAG+I+G4       1.0000  WAG+I{0.234423}+G4{0.163127}
+  24  JTT+I+G4       1.0000  JTT+I{0.308715}+G4{0.405445}
+  25  LG+I+G4        1.0000  LG+I{0.183884}+G4{0.235737}
+  26  LG+I+G4        1.0000  LG+I{0.34685}+G4{0.523824}
+  27  JTT+I+G4       1.0000  JTT+I{0.486772}+G4{0.558886}
+  28  BLOSUM62+I+G4  1.0000  BLOSUM62+I{0.309647}+G4{0.631506}
+  29  LG+I+G4        1.0000  LG+I{0.389771}+G4{0.532713}
+  30  LG+I+G4        1.0000  LG+I{0.441162}+G4{0.489644}
+  31  LG+I+G4        1.0000  LG+I{0.340802}+G4{0.199732}
+  32  VT+I+G4        1.0000  VT+I{0.246346}+G4{0.669215}
+  33  VT+I+G4        1.0000  VT+I{0.100974}+G4{0.64145}
+  34  WAG+I+G4       1.0000  WAG+I{0.303839}+G4{0.686358}
+  35  WAG+I+G4       1.0000  WAG+I{0.428053}+G4{0.510896}
+  36  LG+I+G4        1.0000  LG+I{0.551555}+G4{0.451919}
+  37  VT+I+G4        1.0000  VT+I{0.396132}+G4{0.333012}
+  38  LG+I+G4        1.0000  LG+I{0.402536}+G4{0.317946}
+  39  LG+I+G4        1.0000  LG+I{0.171691}+G4{0.189618}
+  40  CPREV+I+G4     1.0000  CPREV+I{0.341065}+G4{0.411642}
+  41  VT+I+G4        1.0000  VT+I{0.054075}+G4{0.772015}
+  42  LG+I+G4        1.0000  LG+I{0.47918}+G4{0.208413}
+  43  WAG+I+G4       1.0000  WAG+I{0.196285}+G4{0.649273}
+  44  JTT+I+G4       1.0000  JTT+I{0.147766}+G4{0.555461}
+  45  WAG+I+G4       1.0000  WAG+I{0.131035}+G4{0.669841}
+  46  VT+I+G4        1.0000  VT+I{0.214762}+G4{0.511735}
+  47  VT+I+G4        1.0000  VT+I{0.159611}+G4{0.154957}
+  48  LG+I+G4        1.0000  LG+I{0.210564}+G4{0.542317}
+  49  LG+I+G4        1.0000  LG+I{0.360909}+G4{0.429994}
+  50  VT+I+G4        1.0000  VT+I{0.336759}+G4{0.661401}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -1304401.7054 (s.e. 11655.6142)
+Unconstrained log-likelihood (without tree): -168583.7216
+Number of free parameters (#branches + #model parameters): 375
+Akaike information criterion (AIC) score: 2609553.4108
+Corrected Akaike information criterion (AICc) score: 2609563.0803
+Bayesian information criterion (BIC) score: 2612663.4735
+
+Total tree length (sum of branch lengths): 34.6292
+Sum of internal branch lengths: 14.0690 (40.6274% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Absidia_caerulea_NRRL1315' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++-------------------------Absidia_caerulea_NRRL1315
+|
+|                                               +--Actinomucor_elegans_CBS_100.09
+|                                           +---| (100/100)
+|                                           |   +--Actinomucor_elegans_var._kuwaitensis_CBS_117697
+|                                        +--| (99.9/100)
+|                                        |  |     +--Mucor_lanceolatus_CBS_638.74
+|                                        |  |  +--| (100/100)
+|                                        |  |  |  +--Mucor_petrinsularis_var._echinosporus_NRRL_3141
+|                                        |  +--| (99.6/100)
+|                                        |     |  +--Mucor_laxorrhizus_NRRL_2814
+|                                        |     +--| (100/100)
+|                                        |        |  +--Zygorhynchus_exponens_NRRL_1492
+|                                        |        +--| (100/100)
+|                                        |           +--Zygorhynchus_exponens_var._smithii_NRRL_2572T
+|                                     +--| (100/100)
+|                                     |  +----Mucor_circinatus_URM7218
+|                                  +--| (100/100)
+|                                  |  +------------Mucor_gigasporus_CBS_566.91
+|                               +--| (94.8/89)
+|                               |  |            +----Chaetocladium_brefeldii_NRRL_1350
+|                               |  |         +--| (99.9/100)
+|                               |  |         |  |     +--Mucor_brunneogriseus_CBS_129.41
+|                               |  |         |  |  +--| (100/100)
+|                               |  |         |  |  |  +--Mucor_plumbeus_NRRL_2353
+|                               |  |         |  +--| (100/100)
+|                               |  |         |     +--Mucor_racemosus_NRRL_1627
+|                               |  |      +--| (100/100)
+|                               |  |      |  |     +---Mucor_mousanensis_NRRL_3105
+|                               |  |      |  |  +--| (100/100)
+|                               |  |      |  |  |  |       +--Parasitella_parasitica_Bainier_Sydow_NRRL_1461
+|                               |  |      |  |  |  |  +----| (100/100)
+|                               |  |      |  |  |  |  |    +--Parasitella_parasitica_NRRL_2501
+|                               |  |      |  |  |  +--| (100/100)
+|                               |  |      |  |  |     +---Parasitella_simplex_NRRL_1460
+|                               |  |      |  +--| (100/100)
+|                               |  |      |     |  +--Mucor_philippovi_NRRL_3036
+|                               |  |      |     +--| (100/100)
+|                               |  |      |        +--Mucor_sp._nov._CBS_206.69
+|                               |  |  +---| (100/100)
+|                               |  |  |   |              +--Ellisomyces_anomalus_CBS_243.57
+|                               |  |  |   |           +--| (100/100)
+|                               |  |  |   |           |  +--Ellisomyces_anomalus_NRRL_2465_Plus-T
+|                               |  |  |   |        +--| (100/76)
+|                               |  |  |   |        |  |           +--Mucor_circinelloides_f._janssenii_NRRL_2404
+|                               |  |  |   |        |  |        +--| (100/100)
+|                               |  |  |   |        |  |        |  +--Mucor_velutinosus_CBS_762.74
+|                               |  |  |   |        |  |     +--| (100/100)
+|                               |  |  |   |        |  |     |  +--Mucor_variicolumellatus_CBS_236.35
+|                               |  |  |   |        |  |  +--| (100/100)
+|                               |  |  |   |        |  |  |  +--Mucor_sp._NRZ_2022-0058
+|                               |  |  |   |        |  +--| (100/75)
+|                               |  |  |   |        |     |  +--Mucor_circinelloides_f._lusitanicus_NRRL_3629
+|                               |  |  |   |        |     +--| (98.6/75)
+|                               |  |  |   |        |        |     +--Mucor_pseudolusitanicus_CBS_540.78
+|                               |  |  |   |        |        |  +--| (100/100)
+|                               |  |  |   |        |        |  |  +--Mucor_sp._aff._variicolumellatus_CBS_338.71
+|                               |  |  |   |        |        +--| (84.1/89)
+|                               |  |  |   |        |           +--Mucor_ramosissimus_NRRL_3042
+|                               |  |  |   |     +--| (100/100)
+|                               |  |  |   |     |  |  +--Mucor_amethystinus_CBS_526.68
+|                               |  |  |   |     |  +--| (100/87)
+|                               |  |  |   |     |     |  +--Mucor_bainieri_CBS_293.63
+|                               |  |  |   |     |     +--| (100/87)
+|                               |  |  |   |     |        |  +--Mucor_circinelloides_f._griseocyanus_NRRL_3621
+|                               |  |  |   |     |        +--| (74.4/91)
+|                               |  |  |   |     |           +--Mucor_sp._aff._variicolumellatus_CBS_635.65
+|                               |  |  |   |  +--| (100/100)
+|                               |  |  |   |  |  +--Mucor_pseudocircinelloides_CBS_541.78
+|                               |  |  |   +--| (100/100)
+|                               |  |  |      |     +--Mucor_circinelloides_f._circinelloides_NRRL_3614
+|                               |  |  |      |  +--| (100/100)
+|                               |  |  |      |  |  +-----------------Mucor_globosus_NRRL_1436
+|                               |  |  |      +--| (100/100)
+|                               |  |  |         +--Mucor_ctenidius_NRRL_2929T
+|                               |  +--| (98.9/91)
+|                               |     |                     +--Circinella_rigida_NRRL_2341
+|                               |     |              +------| (100/100)
+|                               |     |              |      +--Mucor_abundans_CBS_388.35
+|                               |     |           +--| (100/100)
+|                               |     |           |  +--Mucor_hiemalis_f._silvaticus_NRRL_3643
+|                               |     |        +--| (100/100)
+|                               |     |        |  +--Mucor_bacilliformis_CBS_251.53
+|                               |     |     +--| (100/100)
+|                               |     |     |  |        +--Mucor_multiplex_CBS_110662
+|                               |     |     |  |     +--| (94.1/100)
+|                               |     |     |  |     |  +--Mucor_megalocarpus_CBS_215.27
+|                               |     |     |  |  +--| (100/100)
+|                               |     |     |  |  |  +--Zygorhynchus_sp._NRRL_3102
+|                               |     |     |  +--| (100/100)
+|                               |     |     |     +-----Zygorhynchus_heterogamus_Vuillemin_NRRL_1489
+|                               |     |  +--| (85.5/97)
+|                               |     |  |  |      +--Mucor_moelleri_f._californiensis_CBS_402.58
+|                               |     |  |  |  +---| (100/100)
+|                               |     |  |  |  |   +--Zygorhynchus_moelleri_Vuillemin_NRRL_1497
+|                               |     |  |  +--| (100/100)
+|                               |     |  |     +----Mucor_zonatus_CBS_148.69
+|                               |     +--| (100/100)
+|                               |        |                       +--Helicostylum_pulchrum_RSA_2065
+|                               |        |                    +--| (100/100)
+|                               |        |                    |  +--Thamnidium_elegans_NRRL_2467
+|                               |        |                 +--| (62.9/77)
+|                               |        |                 |  +--Pirella_circinans_CBS_962.68
+|                               |        |              +--| (100/100)
+|                               |        |              |  |     +--Mucor_aligarensis_NRRL_3099
+|                               |        |              |  |  +--| (100/100)
+|                               |        |              |  |  |  |  +--Mucor_flavus_CBS_126.70
+|                               |        |              |  |  |  +--| (100/100)
+|                               |        |              |  |  |     +--Mucor_flavus_CBS_234.35
+|                               |        |              |  +--| (100/100)
+|                               |        |              |     +--Mucor_flavus_CBS_210.71
+|                               |        |           +--| (100/98)
+|                               |        |           |  |  +--Mucor_griseo-ochraceus_var._minuta_NRRL_3246
+|                               |        |           |  +--| (100/100)
+|                               |        |           |     +--Mucor_saturninus_CBS_974.60
+|                               |        |        +--| (56.7/77)
+|                               |        |        |  |  +--Mucor_flavus_CBS_230.35
+|                               |        |        |  +--| (100/100)
+|                               |        |        |     +--Mucor_flavus_CBS_893.73
+|                               |        |     +--| (100/100)
+|                               |        |     |  |   +--Pilaira_anomala_CBS_695.68
+|                               |        |     |  +---| (100/100)
+|                               |        |     |      |  +--Pilaira_caucasica_CBS_523.68
+|                               |        |     |      +--| (100/100)
+|                               |        |     |         +--Pilaira_moreaui_CBS_181.26
+|                               |        |  +--| (100/100)
+|                               |        |  |  |              +--Mucor_koreanus_EML-QT1
+|                               |        |  |  |           +--| (100/100)
+|                               |        |  |  |           |  +--Mucor_piriformis_NRRL_3318
+|                               |        |  |  |        +--| (100/100)
+|                               |        |  |  |        |  +--Mucor_sp._aff._piriformis_CBS_125018
+|                               |        |  |  |     +--| (100/100)
+|                               |        |  |  |     |  |  +--Mucor_mucedo_NRRL_3635
+|                               |        |  |  |     |  +--| (100/100)
+|                               |        |  |  |     |     +--Mucor_sp._aff._mucedo_CBS_122.23
+|                               |        |  |  |  +--| (98.6/98)
+|                               |        |  |  |  |  +--Mucor_strictus_CBS_576.66
+|                               |        |  |  +--| (100/100)
+|                               |        |  |     +---Mucor_plasmaticus_NRRL_2708
+|                               |        +--| (95.8/97)
+|                               |           |  +----Mucor_endophyticus_CBS_385.95
+|                               |           +--| (100/100)
+|                               |              |     +--Mucor_hiemalis_f._corticola_NRRL_3617
+|                               |              |  +--| (100/100)
+|                               |              |  |  +--Mucor_hiemalis_f._hiemalis_NRRL_3624
+|                               |              +--| (79.8/62)
+|                               |                 |     +----Mucor_irregularis_CBS_700.71
+|                               |                 |  +--| (100/100)
+|                               |                 |  |  +---Mucor_merdicola_URM7223
+|                               |                 +--| (100/64)
+|                               |                    +-------Mucor_luteus_NRRL_2865
+|                            +--| (100/100)
+|                            |  +--------Mucor_guilliermondii_CBS_174.27
+|                         +--| (98.4/95)
+|                         |  |                   +--Benjaminiella_multispora_CBS_421.70
+|                         |  |              +----| (100/100)
+|                         |  |              |    |  +--Benjaminiella_poitrasii_RSA_903
+|                         |  |              |    +--| (100/100)
+|                         |  |              |       +--Benjaminiella_youngii_IMI_325629
+|                         |  |        +-----| (100/100)
+|                         |  |        |     +-----Cokeromyces_recurvatus_NRRL_2243
+|                         |  |     +--| (100/100)
+|                         |  |     |  |           +----Mycotypha_indica_IMI_211999
+|                         |  |     |  +-----------| (100/100)
+|                         |  |     |              +----Mycotypha_microspora_Fenner_NRRL_684
+|                         |  |  +--| (100/100)
+|                         |  |  |  |                   +--Kirkomyces_cordensis_CBS_223.63
+|                         |  |  |  |              +----| (100/100)
+|                         |  |  |  |              |    +--Mucor_cordense_RSA_1222
+|                         |  |  |  |           +--| (99.9/82)
+|                         |  |  |  |           |  +--Mucor_ardhlaengiktus_CBS_210.80
+|                         |  |  |  |        +--| (100/80)
+|                         |  |  |  |        |  |     +---Mucor_amphibiorum_CBS_763.74
+|                         |  |  |  |        |  |  +--| (100/100)
+|                         |  |  |  |        |  |  |  +--------Mucor_ucrainicus_CBS_221.71
+|                         |  |  |  |        |  +--| (87.1/85)
+|                         |  |  |  |        |     |  +---Mucor_inaequisporus_NRRL_3626
+|                         |  |  |  |        |     +--| (100/100)
+|                         |  |  |  |        |        +----Mucor_nederlandicus_CBS_735.70
+|                         |  |  |  |     +--| (99.8/81)
+|                         |  |  |  |     |  |  +-------Mucor_falcatus_CBS_251.35
+|                         |  |  |  |     |  +--| (100/100)
+|                         |  |  |  |     |     |  +----Mucor_indicus_Lendner_NRRL_13132
+|                         |  |  |  |     |     +--| (100/100)
+|                         |  |  |  |     |        +---Mucor_luteus_var._indica_NRRL_3245
+|                         |  |  |  |  +--| (100/100)
+|                         |  |  |  |  |  |  +---Mucor_azygosporus_Benjamin_NRRL_3068
+|                         |  |  |  |  |  +--| (100/100)
+|                         |  |  |  |  |     +--Mucor_prayagensis_CBS_816.70
+|                         |  |  |  +--| (100/100)
+|                         |  |  |     |  +---------Mucor_odoratus_NRRL_3064
+|                         |  |  |     +--| (99.3/99)
+|                         |  |  |        +--------Mucor_zychae_var._zychae_NRRL_3243
+|                         |  +--| (100/100)
+|                         |     |           +--Blakeslea_trispora_NRRL_2456
+|                         |     |        +--| (100/100)
+|                         |     |        |  |  +--Choanephora_cucurbitarum_KUS-F28377
+|                         |     |        |  +--| (100/100)
+|                         |     |        |     +--Choanephora_infundibulifera_CBS_156.58
+|                         |     |    +---| (100/100)
+|                         |     |    |   +---Choanephora_circinans_NRRL_2546
+|                         |     +----| (100/100)
+|                         |          +-----Gilbertella_persicaria_var_persicaria_CBS_190
+|                      +--| (100/100)
+|                      |  |               +---Mucor_microsporus_CBS_204.28
+|                      |  +---------------| (100/100)
+|                      |                  +---Mucor_microsporus_OTU100
+|                   +--| (100/100)
+|                   |  |      +------------------Pilobolus_umbonatus_NRRL_6349
+|                   |  |  +---| (100/100)
+|                   |  |  |   +-------------Utharomyces_epallocaulus_CBS_329.73
+|                   |  +--| (100/100)
+|                   |     |            +---Rhizopus_caespitosus_CBS_427.87
+|                   |     |         +--| (99.6/100)
+|                   |     |         |  +---Rhizopus_homothallicus_CBS_336.62
+|                   |     |      +--| (100/100)
+|                   |     |      |  +----Rhizopus_rhizopodiformis_NRRL_2570
+|                   |     +------| (100/100)
+|                   |            |      +------Rhizopus_circinans_NRRL_2913
+|                   |            |  +---| (100/100)
+|                   |            |  |   |            +--Rhizopus_nigricans_Ehrenberg_NRRL_1477
+|                   |            |  |   |         +--| (100/100)
+|                   |            |  |   |         |  +--Rhizopus_stolonifer_NRRL_66455
+|                   |            |  |   |      +--| (100/100)
+|                   |            |  |   |      |  +--Rhizopus_stolonifer_NRRL_66460
+|                   |            |  |   |   +--| (100/100)
+|                   |            |  |   |   |  +--Rhizopus_sexualis_CBS_336.39
+|                   |            |  |   +---| (100/100)
+|                   |            |  |       |          +--Sporodiniella_umbellata_CBS_195.77
+|                   |            |  |       |  +-------| (100/100)
+|                   |            |  |       |  |       +--Sporodiniella_umbellata_FLAS-F-62758
+|                   |            |  |       +--| (65.4/92)
+|                   |            |  |          |          +--Syzygites_megalocarpus_MES_1450
+|                   |            |  |          |       +--| (98.8/100)
+|                   |            |  |          |       |  +--Syzygites_sp._MES_3091
+|                   |            |  |          +-------| (100/100)
+|                   |            |  |                  +--Syzygites_megalocarpus_CBS_372.39
+|                   |            +--| (100/100)
+|                   |               +-----Rhizopus_oryzae_NRRL_3133
+|      +------------| (100/100)
+|      |            |                  +--Backusella_circina_NRRL_2446
+|      |            |               +--| (100/100)
+|      |            |               |  |  +-----Backusella_gigaspora_CBS_538.80
+|      |            |               |  +--| (99.6/100)
+|      |            |               |     |  +--Backusella_lamprospora_NRRL_3300
+|      |            |               |     +--| (100/100)
+|      |            |               |        +--Mucor_dispersus_NRRL_6046
+|      |            |            +--| (100/100)
+|      |            |            |  |  +---Backusella_grandis_CBS_186.87
+|      |            |            |  +--| (100/100)
+|      |            |            |     +--Mucor_recurvus_var._indicus_NRRL_3247
+|      |            |      +-----| (100/100)
+|      |            |      |     |     +--Backusella_variabilis_CBS_564.66
+|      |            |      |     |  +--| (100/100)
+|      |            |      |     |  |  +--Mucor_lamprosporus_NRRL_6040
+|      |            |      |     +--| (100/100)
+|      |            |      |        +--Mucor_recurvus_NRRL_2358
+|      |            |  +---| (100/100)
+|      |            |  |   +--------Backusella_oblongielliptica_CBS_568.70
+|      |            +--| (100/100)
+|      |               +----------Backusella_oblongispora_CBS_569.70
+|   +--| (42.4/78)
+|   |  +--------------------Rhizomucor_pusillus_NRRL_2543
++---| (100/99)
+|   |               +-----------Dichotomocladium_robustum_RSA_2353plus
+|   |         +-----| (100/100)
+|   |         |     |          +--Lichtheimia_corymbifera_NRRL_6379
+|   |         |     +----------| (100/100)
+|   |         |                +--------Lichtheimia_ramosa_NRRL_3208
+|   +---------| (100/100)
+|             |      +-------Fennellomyces_linderi_CBS_158.54
+|             +------| (100/100)
+|                    +--------Zychaea_mexicana_RSA_1403
+|
+|                +---------------Lentamyces_parricidus_NRRL2409
++----------------| (100/100)
+                 +--------------------Lentamyces_zychae_NRRL_2806
+
+Tree in newick format:
+
+(Absidia_caerulea_NRRL1315:0.9561783962,((((((((((((Actinomucor_elegans_CBS_100.09:0.0112556901,Actinomucor_elegans_var._kuwaitensis_CBS_117697:0.0135757308)100/100:0.1545316958,((Mucor_lanceolatus_CBS_638.74:0.0942558832,Mucor_petrinsularis_var._echinosporus_NRRL_3141:0.0169801376)100/100:0.0985693245,(Mucor_laxorrhizus_NRRL_2814:0.1288843004,(Zygorhynchus_exponens_NRRL_1492:0.0145695314,Zygorhynchus_exponens_var._smithii_NRRL_2572T:0.0096720560)100/100:0.0300485912)100/100:0.0366414682)99.6/100:0.0351211586)99.9/100:0.0380630329,Mucor_circinatus_URM7218:0.2129280866)100/100:0.0576992744,Mucor_gigasporus_CBS_566.91:0.4813479829)100/100:0.0651291406,((((Chaetocladium_brefeldii_NRRL_1350:0.1865837446,((Mucor_brunneogriseus_CBS_129.41:0.0696473363,Mucor_plumbeus_NRRL_2353:0.0860711821)100/100:0.0256582166,Mucor_racemosus_NRRL_1627:0.0129678067)100/100:0.0605953220)99.9/100:0.0291984219,((Mucor_mousanensis_NRRL_3105:0.1686036210,((Parasitella_parasitica_Bainier_Sydow_NRRL_1461:0.0015166361,Parasitella_parasitica_NRRL_2501:0.0027203095)100/100:0.1911947289,Parasitella_simplex_NRRL_1460:0.1728899542)100/100:0.0820409818)100/100:0.0705048058,(Mucor_philippovi_NRRL_3036:0.1168804677,Mucor_sp._nov._CBS_206.69:0.1032145136)100/100:0.0554743264)100/100:0.0255549716)100/100:0.0308697979,(((((Ellisomyces_anomalus_CBS_243.57:0.0017277646,Ellisomyces_anomalus_NRRL_2465_Plus-T:0.0005480433)100/100:0.0491127662,((((Mucor_circinelloides_f._janssenii_NRRL_2404:0.0498661170,Mucor_velutinosus_CBS_762.74:0.0109357583)100/100:0.0379243718,Mucor_variicolumellatus_CBS_236.35:0.0424935216)100/100:0.0092091315,Mucor_sp._NRZ_2022-0058:0.0218694637)100/100:0.0316580244,(Mucor_circinelloides_f._lusitanicus_NRRL_3629:0.0689179486,((Mucor_pseudolusitanicus_CBS_540.78:0.0571561001,Mucor_sp._aff._variicolumellatus_CBS_338.71:0.1111667521)100/100:0.0399389368,Mucor_ramosissimus_NRRL_3042:0.0748751622)84.1/89:0.0414380749)98.6/75:0.0127480909)100/75:0.0255805857)100/76:0.0084355915,(Mucor_amethystinus_CBS_526.68:0.0237752873,(Mucor_bainieri_CBS_293.63:0.0910993256,(Mucor_circinelloides_f._griseocyanus_NRRL_3621:0.0216417926,Mucor_sp._aff._variicolumellatus_CBS_635.65:0.1051245539)74.4/91:0.0293927056)100/87:0.0275802980)100/87:0.0138615679)100/100:0.0308819152,Mucor_pseudocircinelloides_CBS_541.78:0.0510095909)100/100:0.0180613638,((Mucor_circinelloides_f._circinelloides_NRRL_3614:0.0024681883,Mucor_globosus_NRRL_1436:0.6862885183)100/100:0.1025907729,Mucor_ctenidius_NRRL_2929T:0.0429075663)100/100:0.0841554785)100/100:0.0311382207)100/100:0.1662823982,((((((Circinella_rigida_NRRL_2341:0.1034631718,Mucor_abundans_CBS_388.35:0.1037062092)100/100:0.2642567269,Mucor_hiemalis_f._silvaticus_NRRL_3643:0.0933863916)100/100:0.0535004444,Mucor_bacilliformis_CBS_251.53:0.1288852502)100/100:0.0285889725,(((Mucor_multiplex_CBS_110662:0.0356228709,Mucor_megalocarpus_CBS_215.27:0.0525450730)94.1/100:0.0060082756,Zygorhynchus_sp._NRRL_3102:0.0850363427)100/100:0.0357934652,Zygorhynchus_heterogamus_Vuillemin_NRRL_1489:0.2365246064)100/100:0.0542955071)100/100:0.0591699313,((Mucor_moelleri_f._californiensis_CBS_402.58:0.0087000319,Zygorhynchus_moelleri_Vuillemin_NRRL_1497:0.0088334612)100/100:0.1781675377,Mucor_zonatus_CBS_148.69:0.2145477540)100/100:0.0993601466)85.5/97:0.0214714868,((((((((Helicostylum_pulchrum_RSA_2065:0.0716944978,Thamnidium_elegans_NRRL_2467:0.0480382057)100/100:0.0305133642,Pirella_circinans_CBS_962.68:0.1313198034)62.9/77:0.0197201907,((Mucor_aligarensis_NRRL_3099:0.0266403606,(Mucor_flavus_CBS_126.70:0.0230502483,Mucor_flavus_CBS_234.35:0.0314484069)100/100:0.0263465284)100/100:0.0776081011,Mucor_flavus_CBS_210.71:0.1288312964)100/100:0.1188074101)100/100:0.0652278170,(Mucor_griseo-ochraceus_var._minuta_NRRL_3246:0.0889422893,Mucor_saturninus_CBS_974.60:0.1006443763)100/100:0.0394237600)100/98:0.0499430292,(Mucor_flavus_CBS_230.35:0.0076131779,Mucor_flavus_CBS_893.73:0.0018035826)100/100:0.1421178491)56.7/77:0.0222159494,(Pilaira_anomala_CBS_695.68:0.0628898136,(Pilaira_caucasica_CBS_523.68:0.0139161766,Pilaira_moreaui_CBS_181.26:0.0032603506)100/100:0.0835112497)100/100:0.1546172638)100/100:0.1133684719,(((((Mucor_koreanus_EML-QT1:0.0040595121,Mucor_piriformis_NRRL_3318:0.0073969120)100/100:0.0727350059,Mucor_sp._aff._piriformis_CBS_125018:0.0831457481)100/100:0.0927961701,(Mucor_mucedo_NRRL_3635:0.0366016309,Mucor_sp._aff._mucedo_CBS_122.23:0.0460516523)100/100:0.1347306407)100/100:0.0580757094,Mucor_strictus_CBS_576.66:0.1325086699)98.6/98:0.0335349834,Mucor_plasmaticus_NRRL_2708:0.1802399516)100/100:0.1139311413)100/100:0.1097480250,(Mucor_endophyticus_CBS_385.95:0.2149214586,((Mucor_hiemalis_f._corticola_NRRL_3617:0.1161039125,Mucor_hiemalis_f._hiemalis_NRRL_3624:0.1009502361)100/100:0.0735509442,((Mucor_irregularis_CBS_700.71:0.2079100450,Mucor_merdicola_URM7223:0.1581889707)100/100:0.0723999915,Mucor_luteus_NRRL_2865:0.3155229161)100/64:0.0392970502)79.8/62:0.0259147467)100/100:0.0816035809)95.8/97:0.0244091127)100/100:0.1411795738)98.9/91:0.0392996479)94.8/89:0.0298890168,Mucor_guilliermondii_CBS_174.27:0.3336177470)100/100:0.0598863725,(((((Benjaminiella_multispora_CBS_421.70:0.1177110433,(Benjaminiella_poitrasii_RSA_903:0.0191531463,Benjaminiella_youngii_IMI_325629:0.0319918753)100/100:0.0941202642)100/100:0.1939544768,Cokeromyces_recurvatus_NRRL_2243:0.2268978598)100/100:0.2225913264,(Mycotypha_indica_IMI_211999:0.1886619558,Mycotypha_microspora_Fenner_NRRL_684:0.2081413076)100/100:0.4583416410)100/100:0.0691150424,((((((Kirkomyces_cordensis_CBS_223.63:0.0056648180,Mucor_cordense_RSA_1222:0.0073479246)100/100:0.1927591020,Mucor_ardhlaengiktus_CBS_210.80:0.1171351724)99.9/82:0.0517567323,((Mucor_amphibiorum_CBS_763.74:0.1731274558,Mucor_ucrainicus_CBS_221.71:0.3504172386)100/100:0.0623494621,(Mucor_inaequisporus_NRRL_3626:0.1546820583,Mucor_nederlandicus_CBS_735.70:0.1953763548)100/100:0.1093779643)87.1/85:0.0378794286)100/80:0.0261656640,(Mucor_falcatus_CBS_251.35:0.3279849287,(Mucor_indicus_Lendner_NRRL_13132:0.1913919832,Mucor_luteus_var._indica_NRRL_3245:0.1612830176)100/100:0.0287282271)100/100:0.0442075339)99.8/81:0.0291278085,(Mucor_azygosporus_Benjamin_NRRL_3068:0.1787567244,Mucor_prayagensis_CBS_816.70:0.0809740675)100/100:0.1012848071)100/100:0.1386870917,(Mucor_odoratus_NRRL_3064:0.3991583351,Mucor_zychae_var._zychae_NRRL_3243:0.3445880641)99.3/99:0.0678544359)100/100:0.1420061055)100/100:0.0569896990,(((Blakeslea_trispora_NRRL_2456:0.0884930648,(Choanephora_cucurbitarum_KUS-F28377:0.0353153051,Choanephora_infundibulifera_CBS_156.58:0.0372043586)100/100:0.0535276960)100/100:0.0582016279,Choanephora_circinans_NRRL_2546:0.1547105564)100/100:0.1479429175,Gilbertella_persicaria_var_persicaria_CBS_190:0.2534847905)100/100:0.1884361441)100/100:0.0487352070)98.4/95:0.0558155093,(Mucor_microsporus_CBS_204.28:0.1783096060,Mucor_microsporus_OTU100:0.1621923966)100/100:0.6137685787)100/100:0.0975681328,((Pilobolus_umbonatus_NRRL_6349:0.7111114813,Utharomyces_epallocaulus_CBS_329.73:0.5306989490)100/100:0.1488284460,(((Rhizopus_caespitosus_CBS_427.87:0.1622930099,Rhizopus_homothallicus_CBS_336.62:0.1636766884)99.6/100:0.0342110455,Rhizopus_rhizopodiformis_NRRL_2570:0.1959695183)100/100:0.1452869403,((Rhizopus_circinans_NRRL_2913:0.2706330721,((((Rhizopus_nigricans_Ehrenberg_NRRL_1477:0.0051566138,Rhizopus_stolonifer_NRRL_66455:0.0064981828)100/100:0.0916658026,Rhizopus_stolonifer_NRRL_66460:0.1112726286)100/100:0.0370432922,Rhizopus_sexualis_CBS_336.39:0.0614178667)100/100:0.1006352769,((Sporodiniella_umbellata_CBS_195.77:0.0047596274,Sporodiniella_umbellata_FLAS-F-62758:0.0042144357)100/100:0.3118067245,((Syzygites_megalocarpus_MES_1450:0.0098441634,Syzygites_sp._MES_3091:0.0013115510)98.8/100:0.0059699452,Syzygites_megalocarpus_CBS_372.39:0.0293418544)100/100:0.3000842727)65.4/92:0.0445897118)100/100:0.1548026971)100/100:0.1529583692,Rhizopus_oryzae_NRRL_3133:0.2269899516)100/100:0.0882470420)100/100:0.2929477440)100/100:0.0965165423)100/100:0.0680091861,(((((Backusella_circina_NRRL_2446:0.1464979121,(Backusella_gigaspora_CBS_538.80:0.2501837430,(Backusella_lamprospora_NRRL_3300:0.0811185636,Mucor_dispersus_NRRL_6046:0.0655036545)100/100:0.1127740386)99.6/100:0.0273567262)100/100:0.0649806786,(Backusella_grandis_CBS_186.87:0.1724800799,Mucor_recurvus_var._indicus_NRRL_3247:0.1360265949)100/100:0.0709420502)100/100:0.0722247561,((Backusella_variabilis_CBS_564.66:0.0750275434,Mucor_lamprosporus_NRRL_6040:0.0160444180)100/100:0.1183135681,Mucor_recurvus_NRRL_2358:0.0935423458)100/100:0.1289019922)100/100:0.2249498783,Backusella_oblongielliptica_CBS_568.70:0.3576483322)100/100:0.1480227807,Backusella_oblongispora_CBS_569.70:0.4274270933)100/100:0.0706252017)100/100:0.5071290348,Rhizomucor_pusillus_NRRL_2543:0.7985415360)42.4/78:0.1140532889,((Dichotomocladium_robustum_RSA_2353plus:0.4751027964,(Lichtheimia_corymbifera_NRRL_6379:0.1030853350,Lichtheimia_ramosa_NRRL_3208:0.3644458168)100/100:0.4080176366)100/100:0.2340187254,(Fennellomyces_linderi_CBS_158.54:0.3087492898,Zychaea_mexicana_RSA_1403:0.3326108011)100/100:0.2887805750)100/100:0.4038642035)100/99:0.1622002938,(Lentamyces_parricidus_NRRL2409:0.6179449842,Lentamyces_zychae_NRRL_2806:0.7797677448)100/100:0.6530166014);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -1304401.705461
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++-------------------------Absidia_caerulea_NRRL1315
+|
+|                                               +--Actinomucor_elegans_CBS_100.09
+|                                           +---| (100)
+|                                           |   +--Actinomucor_elegans_var._kuwaitensis_CBS_117697
+|                                        +--| (100)
+|                                        |  |     +--Mucor_lanceolatus_CBS_638.74
+|                                        |  |  +--| (100)
+|                                        |  |  |  +--Mucor_petrinsularis_var._echinosporus_NRRL_3141
+|                                        |  +--| (100)
+|                                        |     |  +--Mucor_laxorrhizus_NRRL_2814
+|                                        |     +--| (100)
+|                                        |        |  +--Zygorhynchus_exponens_NRRL_1492
+|                                        |        +--| (100)
+|                                        |           +--Zygorhynchus_exponens_var._smithii_NRRL_2572T
+|                                     +--| (100)
+|                                     |  +----Mucor_circinatus_URM7218
+|                                  +--| (100)
+|                                  |  +------------Mucor_gigasporus_CBS_566.91
+|                               +--| (89)
+|                               |  |            +----Chaetocladium_brefeldii_NRRL_1350
+|                               |  |         +--| (100)
+|                               |  |         |  |     +--Mucor_brunneogriseus_CBS_129.41
+|                               |  |         |  |  +--| (100)
+|                               |  |         |  |  |  +--Mucor_plumbeus_NRRL_2353
+|                               |  |         |  +--| (100)
+|                               |  |         |     +--Mucor_racemosus_NRRL_1627
+|                               |  |      +--| (100)
+|                               |  |      |  |     +---Mucor_mousanensis_NRRL_3105
+|                               |  |      |  |  +--| (100)
+|                               |  |      |  |  |  |       +--Parasitella_parasitica_Bainier_Sydow_NRRL_1461
+|                               |  |      |  |  |  |  +----| (100)
+|                               |  |      |  |  |  |  |    +--Parasitella_parasitica_NRRL_2501
+|                               |  |      |  |  |  +--| (100)
+|                               |  |      |  |  |     +---Parasitella_simplex_NRRL_1460
+|                               |  |      |  +--| (100)
+|                               |  |      |     |  +--Mucor_philippovi_NRRL_3036
+|                               |  |      |     +--| (100)
+|                               |  |      |        +--Mucor_sp._nov._CBS_206.69
+|                               |  |  +---| (100)
+|                               |  |  |   |              +--Ellisomyces_anomalus_CBS_243.57
+|                               |  |  |   |           +--| (100)
+|                               |  |  |   |           |  +--Ellisomyces_anomalus_NRRL_2465_Plus-T
+|                               |  |  |   |        +--| (76)
+|                               |  |  |   |        |  |           +--Mucor_circinelloides_f._janssenii_NRRL_2404
+|                               |  |  |   |        |  |        +--| (100)
+|                               |  |  |   |        |  |        |  +--Mucor_velutinosus_CBS_762.74
+|                               |  |  |   |        |  |     +--| (100)
+|                               |  |  |   |        |  |     |  +--Mucor_variicolumellatus_CBS_236.35
+|                               |  |  |   |        |  |  +--| (100)
+|                               |  |  |   |        |  |  |  +--Mucor_sp._NRZ_2022-0058
+|                               |  |  |   |        |  +--| (75)
+|                               |  |  |   |        |     |  +--Mucor_circinelloides_f._lusitanicus_NRRL_3629
+|                               |  |  |   |        |     +--| (75)
+|                               |  |  |   |        |        |     +--Mucor_pseudolusitanicus_CBS_540.78
+|                               |  |  |   |        |        |  +--| (100)
+|                               |  |  |   |        |        |  |  +--Mucor_sp._aff._variicolumellatus_CBS_338.71
+|                               |  |  |   |        |        +--| (89)
+|                               |  |  |   |        |           +--Mucor_ramosissimus_NRRL_3042
+|                               |  |  |   |     +--| (100)
+|                               |  |  |   |     |  |  +--Mucor_amethystinus_CBS_526.68
+|                               |  |  |   |     |  +--| (87)
+|                               |  |  |   |     |     |  +--Mucor_bainieri_CBS_293.63
+|                               |  |  |   |     |     +--| (87)
+|                               |  |  |   |     |        |  +--Mucor_circinelloides_f._griseocyanus_NRRL_3621
+|                               |  |  |   |     |        +--| (91)
+|                               |  |  |   |     |           +--Mucor_sp._aff._variicolumellatus_CBS_635.65
+|                               |  |  |   |  +--| (100)
+|                               |  |  |   |  |  +--Mucor_pseudocircinelloides_CBS_541.78
+|                               |  |  |   +--| (100)
+|                               |  |  |      |     +--Mucor_circinelloides_f._circinelloides_NRRL_3614
+|                               |  |  |      |  +--| (100)
+|                               |  |  |      |  |  +-----------------Mucor_globosus_NRRL_1436
+|                               |  |  |      +--| (100)
+|                               |  |  |         +--Mucor_ctenidius_NRRL_2929T
+|                               |  +--| (91)
+|                               |     |                     +--Circinella_rigida_NRRL_2341
+|                               |     |              +------| (100)
+|                               |     |              |      +--Mucor_abundans_CBS_388.35
+|                               |     |           +--| (100)
+|                               |     |           |  +--Mucor_hiemalis_f._silvaticus_NRRL_3643
+|                               |     |        +--| (100)
+|                               |     |        |  +--Mucor_bacilliformis_CBS_251.53
+|                               |     |     +--| (100)
+|                               |     |     |  |        +--Mucor_multiplex_CBS_110662
+|                               |     |     |  |     +--| (100)
+|                               |     |     |  |     |  +--Mucor_megalocarpus_CBS_215.27
+|                               |     |     |  |  +--| (100)
+|                               |     |     |  |  |  +--Zygorhynchus_sp._NRRL_3102
+|                               |     |     |  +--| (100)
+|                               |     |     |     +-----Zygorhynchus_heterogamus_Vuillemin_NRRL_1489
+|                               |     |  +--| (97)
+|                               |     |  |  |      +--Mucor_moelleri_f._californiensis_CBS_402.58
+|                               |     |  |  |  +---| (100)
+|                               |     |  |  |  |   +--Zygorhynchus_moelleri_Vuillemin_NRRL_1497
+|                               |     |  |  +--| (100)
+|                               |     |  |     +----Mucor_zonatus_CBS_148.69
+|                               |     +--| (100)
+|                               |        |                       +--Helicostylum_pulchrum_RSA_2065
+|                               |        |                    +--| (100)
+|                               |        |                    |  +--Thamnidium_elegans_NRRL_2467
+|                               |        |                 +--| (77)
+|                               |        |                 |  +--Pirella_circinans_CBS_962.68
+|                               |        |              +--| (100)
+|                               |        |              |  |     +--Mucor_aligarensis_NRRL_3099
+|                               |        |              |  |  +--| (100)
+|                               |        |              |  |  |  |  +--Mucor_flavus_CBS_126.70
+|                               |        |              |  |  |  +--| (100)
+|                               |        |              |  |  |     +--Mucor_flavus_CBS_234.35
+|                               |        |              |  +--| (100)
+|                               |        |              |     +--Mucor_flavus_CBS_210.71
+|                               |        |           +--| (98)
+|                               |        |           |  |  +--Mucor_griseo-ochraceus_var._minuta_NRRL_3246
+|                               |        |           |  +--| (100)
+|                               |        |           |     +--Mucor_saturninus_CBS_974.60
+|                               |        |        +--| (77)
+|                               |        |        |  |  +--Mucor_flavus_CBS_230.35
+|                               |        |        |  +--| (100)
+|                               |        |        |     +--Mucor_flavus_CBS_893.73
+|                               |        |     +--| (100)
+|                               |        |     |  |   +--Pilaira_anomala_CBS_695.68
+|                               |        |     |  +---| (100)
+|                               |        |     |      |  +--Pilaira_caucasica_CBS_523.68
+|                               |        |     |      +--| (100)
+|                               |        |     |         +--Pilaira_moreaui_CBS_181.26
+|                               |        |  +--| (100)
+|                               |        |  |  |              +--Mucor_koreanus_EML-QT1
+|                               |        |  |  |           +--| (100)
+|                               |        |  |  |           |  +--Mucor_piriformis_NRRL_3318
+|                               |        |  |  |        +--| (100)
+|                               |        |  |  |        |  +--Mucor_sp._aff._piriformis_CBS_125018
+|                               |        |  |  |     +--| (100)
+|                               |        |  |  |     |  |  +--Mucor_mucedo_NRRL_3635
+|                               |        |  |  |     |  +--| (100)
+|                               |        |  |  |     |     +--Mucor_sp._aff._mucedo_CBS_122.23
+|                               |        |  |  |  +--| (98)
+|                               |        |  |  |  |  +--Mucor_strictus_CBS_576.66
+|                               |        |  |  +--| (100)
+|                               |        |  |     +---Mucor_plasmaticus_NRRL_2708
+|                               |        +--| (97)
+|                               |           |  +----Mucor_endophyticus_CBS_385.95
+|                               |           +--| (100)
+|                               |              |     +--Mucor_hiemalis_f._corticola_NRRL_3617
+|                               |              |  +--| (100)
+|                               |              |  |  +--Mucor_hiemalis_f._hiemalis_NRRL_3624
+|                               |              +--| (62)
+|                               |                 |     +----Mucor_irregularis_CBS_700.71
+|                               |                 |  +--| (100)
+|                               |                 |  |  +---Mucor_merdicola_URM7223
+|                               |                 +--| (64)
+|                               |                    +-------Mucor_luteus_NRRL_2865
+|                            +--| (100)
+|                            |  +--------Mucor_guilliermondii_CBS_174.27
+|                         +--| (95)
+|                         |  |                   +--Benjaminiella_multispora_CBS_421.70
+|                         |  |              +----| (100)
+|                         |  |              |    |  +--Benjaminiella_poitrasii_RSA_903
+|                         |  |              |    +--| (100)
+|                         |  |              |       +--Benjaminiella_youngii_IMI_325629
+|                         |  |        +-----| (100)
+|                         |  |        |     +-----Cokeromyces_recurvatus_NRRL_2243
+|                         |  |     +--| (100)
+|                         |  |     |  |           +----Mycotypha_indica_IMI_211999
+|                         |  |     |  +-----------| (100)
+|                         |  |     |              +----Mycotypha_microspora_Fenner_NRRL_684
+|                         |  |  +--| (100)
+|                         |  |  |  |                   +--Kirkomyces_cordensis_CBS_223.63
+|                         |  |  |  |              +----| (100)
+|                         |  |  |  |              |    +--Mucor_cordense_RSA_1222
+|                         |  |  |  |           +--| (82)
+|                         |  |  |  |           |  +--Mucor_ardhlaengiktus_CBS_210.80
+|                         |  |  |  |        +--| (80)
+|                         |  |  |  |        |  |     +---Mucor_amphibiorum_CBS_763.74
+|                         |  |  |  |        |  |  +--| (100)
+|                         |  |  |  |        |  |  |  +--------Mucor_ucrainicus_CBS_221.71
+|                         |  |  |  |        |  +--| (85)
+|                         |  |  |  |        |     |  +---Mucor_inaequisporus_NRRL_3626
+|                         |  |  |  |        |     +--| (100)
+|                         |  |  |  |        |        +----Mucor_nederlandicus_CBS_735.70
+|                         |  |  |  |     +--| (81)
+|                         |  |  |  |     |  |  +-------Mucor_falcatus_CBS_251.35
+|                         |  |  |  |     |  +--| (100)
+|                         |  |  |  |     |     |  +----Mucor_indicus_Lendner_NRRL_13132
+|                         |  |  |  |     |     +--| (100)
+|                         |  |  |  |     |        +---Mucor_luteus_var._indica_NRRL_3245
+|                         |  |  |  |  +--| (100)
+|                         |  |  |  |  |  |  +---Mucor_azygosporus_Benjamin_NRRL_3068
+|                         |  |  |  |  |  +--| (100)
+|                         |  |  |  |  |     +--Mucor_prayagensis_CBS_816.70
+|                         |  |  |  +--| (100)
+|                         |  |  |     |  +---------Mucor_odoratus_NRRL_3064
+|                         |  |  |     +--| (99)
+|                         |  |  |        +--------Mucor_zychae_var._zychae_NRRL_3243
+|                         |  +--| (100)
+|                         |     |           +--Blakeslea_trispora_NRRL_2456
+|                         |     |        +--| (100)
+|                         |     |        |  |  +--Choanephora_cucurbitarum_KUS-F28377
+|                         |     |        |  +--| (100)
+|                         |     |        |     +--Choanephora_infundibulifera_CBS_156.58
+|                         |     |    +---| (100)
+|                         |     |    |   +---Choanephora_circinans_NRRL_2546
+|                         |     +----| (100)
+|                         |          +-----Gilbertella_persicaria_var_persicaria_CBS_190
+|                      +--| (100)
+|                      |  |               +---Mucor_microsporus_CBS_204.28
+|                      |  +---------------| (100)
+|                      |                  +---Mucor_microsporus_OTU100
+|                   +--| (100)
+|                   |  |      +------------------Pilobolus_umbonatus_NRRL_6349
+|                   |  |  +---| (100)
+|                   |  |  |   +-------------Utharomyces_epallocaulus_CBS_329.73
+|                   |  +--| (100)
+|                   |     |            +---Rhizopus_caespitosus_CBS_427.87
+|                   |     |         +--| (100)
+|                   |     |         |  +---Rhizopus_homothallicus_CBS_336.62
+|                   |     |      +--| (100)
+|                   |     |      |  +----Rhizopus_rhizopodiformis_NRRL_2570
+|                   |     +------| (100)
+|                   |            |      +------Rhizopus_circinans_NRRL_2913
+|                   |            |  +---| (100)
+|                   |            |  |   |            +--Rhizopus_nigricans_Ehrenberg_NRRL_1477
+|                   |            |  |   |         +--| (100)
+|                   |            |  |   |         |  +--Rhizopus_stolonifer_NRRL_66455
+|                   |            |  |   |      +--| (100)
+|                   |            |  |   |      |  +--Rhizopus_stolonifer_NRRL_66460
+|                   |            |  |   |   +--| (100)
+|                   |            |  |   |   |  +--Rhizopus_sexualis_CBS_336.39
+|                   |            |  |   +---| (100)
+|                   |            |  |       |          +--Sporodiniella_umbellata_CBS_195.77
+|                   |            |  |       |  +-------| (100)
+|                   |            |  |       |  |       +--Sporodiniella_umbellata_FLAS-F-62758
+|                   |            |  |       +--| (92)
+|                   |            |  |          |          +--Syzygites_megalocarpus_MES_1450
+|                   |            |  |          |       +--| (100)
+|                   |            |  |          |       |  +--Syzygites_sp._MES_3091
+|                   |            |  |          +-------| (100)
+|                   |            |  |                  +--Syzygites_megalocarpus_CBS_372.39
+|                   |            +--| (100)
+|                   |               +-----Rhizopus_oryzae_NRRL_3133
+|      +------------| (100)
+|      |            |                  +--Backusella_circina_NRRL_2446
+|      |            |               +--| (100)
+|      |            |               |  |  +-----Backusella_gigaspora_CBS_538.80
+|      |            |               |  +--| (100)
+|      |            |               |     |  +--Backusella_lamprospora_NRRL_3300
+|      |            |               |     +--| (100)
+|      |            |               |        +--Mucor_dispersus_NRRL_6046
+|      |            |            +--| (100)
+|      |            |            |  |  +---Backusella_grandis_CBS_186.87
+|      |            |            |  +--| (100)
+|      |            |            |     +--Mucor_recurvus_var._indicus_NRRL_3247
+|      |            |      +-----| (100)
+|      |            |      |     |     +--Backusella_variabilis_CBS_564.66
+|      |            |      |     |  +--| (100)
+|      |            |      |     |  |  +--Mucor_lamprosporus_NRRL_6040
+|      |            |      |     +--| (100)
+|      |            |      |        +--Mucor_recurvus_NRRL_2358
+|      |            |  +---| (100)
+|      |            |  |   +--------Backusella_oblongielliptica_CBS_568.70
+|      |            +--| (100)
+|      |               +----------Backusella_oblongispora_CBS_569.70
+|   +--| (78)
+|   |  +--------------------Rhizomucor_pusillus_NRRL_2543
++---| (99)
+|   |               +-----------Dichotomocladium_robustum_RSA_2353plus
+|   |         +-----| (100)
+|   |         |     |          +--Lichtheimia_corymbifera_NRRL_6379
+|   |         |     +----------| (100)
+|   |         |                +--------Lichtheimia_ramosa_NRRL_3208
+|   +---------| (100)
+|             |      +-------Fennellomyces_linderi_CBS_158.54
+|             +------| (100)
+|                    +--------Zychaea_mexicana_RSA_1403
+|
+|                +---------------Lentamyces_parricidus_NRRL2409
++----------------| (100)
+                 +--------------------Lentamyces_zychae_NRRL_2806
+
+
+Consensus tree in newick format: 
+
+(Absidia_caerulea_NRRL1315:0.9560642587,((((((((((((Actinomucor_elegans_CBS_100.09:0.0112534709,Actinomucor_elegans_var._kuwaitensis_CBS_117697:0.0135746852)100:0.1545147604,((Mucor_lanceolatus_CBS_638.74:0.0942459761,Mucor_petrinsularis_var._echinosporus_NRRL_3141:0.0169781670)100:0.0985579927,(Mucor_laxorrhizus_NRRL_2814:0.1288708046,(Zygorhynchus_exponens_NRRL_1492:0.0145672217,Zygorhynchus_exponens_var._smithii_NRRL_2572T:0.0096695781)100:0.0300453155)100:0.0366392195)100:0.0351172085)100:0.0380600150,Mucor_circinatus_URM7218:0.2129010371)100:0.0576860846,Mucor_gigasporus_CBS_566.91:0.4812705962)100:0.0651354777,((((Chaetocladium_brefeldii_NRRL_1350:0.1865589942,((Mucor_brunneogriseus_CBS_129.41:0.0696380362,Mucor_plumbeus_NRRL_2353:0.0860593417)100:0.0256584020,Mucor_racemosus_NRRL_1627:0.0129655936)100:0.0605882962)100:0.0291963311,((Mucor_mousanensis_NRRL_3105:0.1685689576,((Parasitella_parasitica_Bainier_Sydow_NRRL_1461:0.0015162541,Parasitella_parasitica_NRRL_2501:0.0027181803)100:0.1911689530,Parasitella_simplex_NRRL_1460:0.1728671171)100:0.0820276466)100:0.0705114989,(Mucor_philippovi_NRRL_3036:0.1168649303,Mucor_sp._nov._CBS_206.69:0.1032020588)100:0.0554667983)100:0.0255533362)100:0.0308690471,(((((Ellisomyces_anomalus_CBS_243.57:0.0017266489,Ellisomyces_anomalus_NRRL_2465_Plus-T:0.0005476075)100:0.0491070078,((((Mucor_circinelloides_f._janssenii_NRRL_2404:0.0498604335,Mucor_velutinosus_CBS_762.74:0.0109337062)100:0.0379202830,Mucor_variicolumellatus_CBS_236.35:0.0424894543)100:0.0092074412,Mucor_sp._NRZ_2022-0058:0.0218672766)100:0.0316542241,(Mucor_circinelloides_f._lusitanicus_NRRL_3629:0.0689089755,((Mucor_pseudolusitanicus_CBS_540.78:0.0571508855,Mucor_sp._aff._variicolumellatus_CBS_338.71:0.1111520948)100:0.0399360525,Mucor_ramosissimus_NRRL_3042:0.0748661478)89:0.0414346824)75:0.0127495383)75:0.0255785250)76:0.0084334867,(Mucor_amethystinus_CBS_526.68:0.0237728706,(Mucor_bainieri_CBS_293.63:0.0910886305,(Mucor_circinelloides_f._griseocyanus_NRRL_3621:0.0216398544,Mucor_sp._aff._variicolumellatus_CBS_635.65:0.1051120157)91:0.0293889019)87:0.0275792985)87:0.0138599926)100:0.0308789262,Mucor_pseudocircinelloides_CBS_541.78:0.0510041372)100:0.0180593466,((Mucor_circinelloides_f._circinelloides_NRRL_3614:0.0024697745,Mucor_globosus_NRRL_1436:0.6861753869)100:0.1025769024,Mucor_ctenidius_NRRL_2929T:0.0429029142)100:0.0841473093)100:0.0311349197)100:0.1662610857,((((((Circinella_rigida_NRRL_2341:0.1034560137,Mucor_abundans_CBS_388.35:0.1036893057)100:0.2642158694,Mucor_hiemalis_f._silvaticus_NRRL_3643:0.0933744639)100:0.0534968174,Mucor_bacilliformis_CBS_251.53:0.1288691675)100:0.0285868685,(((Mucor_multiplex_CBS_110662:0.0356189893,Mucor_megalocarpus_CBS_215.27:0.0525380069)100:0.0060069206,Zygorhynchus_sp._NRRL_3102:0.0850256881)100:0.0357816988,Zygorhynchus_heterogamus_Vuillemin_NRRL_1489:0.2364976635)100:0.0543029034)100:0.0591634985,((Mucor_moelleri_f._californiensis_CBS_402.58:0.0086975029,Zygorhynchus_moelleri_Vuillemin_NRRL_1497:0.0088327462)100:0.1781382132,Mucor_zonatus_CBS_148.69:0.2145198818)100:0.0993539567)97:0.0214693409,((((((((Helicostylum_pulchrum_RSA_2065:0.0716846200,Thamnidium_elegans_NRRL_2467:0.0480319188)100:0.0305102537,Pirella_circinans_CBS_962.68:0.1312956129)77:0.0197222312,((Mucor_aligarensis_NRRL_3099:0.0266358850,(Mucor_flavus_CBS_126.70:0.0230477534,Mucor_flavus_CBS_234.35:0.0314441985)100:0.0263443776)100:0.0776095744,Mucor_flavus_CBS_210.71:0.1288111486)100:0.1187781039)100:0.0652169674,(Mucor_griseo-ochraceus_var._minuta_NRRL_3246:0.0889298131,Mucor_saturninus_CBS_974.60:0.1006300619)100:0.0394224361)98:0.0499415841,(Mucor_flavus_CBS_230.35:0.0076113379,Mucor_flavus_CBS_893.73:0.0018027982)100:0.1420925192)77:0.0222201667,(Pilaira_anomala_CBS_695.68:0.0628842922,(Pilaira_caucasica_CBS_523.68:0.0139146464,Pilaira_moreaui_CBS_181.26:0.0032585534)100:0.0834960284)100:0.1545890902)100:0.1133496465,(((((Mucor_koreanus_EML-QT1:0.0040585450,Mucor_piriformis_NRRL_3318:0.0073956686)100:0.0727229667,Mucor_sp._aff._piriformis_CBS_125018:0.0831364866)100:0.0927820088,(Mucor_mucedo_NRRL_3635:0.0365983404,Mucor_sp._aff._mucedo_CBS_122.23:0.0460449208)100:0.1347118435)100:0.0580666444,Mucor_strictus_CBS_576.66:0.1324931223)98:0.0335308420,Mucor_plasmaticus_NRRL_2708:0.1802119437)100:0.1139144870)100:0.1097297303,(Mucor_endophyticus_CBS_385.95:0.2148880882,((Mucor_hiemalis_f._corticola_NRRL_3617:0.1160885730,Mucor_hiemalis_f._hiemalis_NRRL_3624:0.1009354075)100:0.0735432082,((Mucor_irregularis_CBS_700.71:0.2078815920,Mucor_merdicola_URM7223:0.1581636109)100:0.0723914212,Mucor_luteus_NRRL_2865:0.3154686008)64:0.0392962545)62:0.0259127604)100:0.0815914924)97:0.0244060481)100:0.1411612088)91:0.0392948551)89:0.0298896433,Mucor_guilliermondii_CBS_174.27:0.3335723679)100:0.0598781031,(((((Benjaminiella_multispora_CBS_421.70:0.1177010774,(Benjaminiella_poitrasii_RSA_903:0.0191518660,Benjaminiella_youngii_IMI_325629:0.0319891274)100:0.0941117529)100:0.1939263574,Cokeromyces_recurvatus_NRRL_2243:0.2268817118)100:0.2225542302,(Mycotypha_indica_IMI_211999:0.1886629017,Mycotypha_microspora_Fenner_NRRL_684:0.2081035076)100:0.4582626081)100:0.0691200336,((((((Kirkomyces_cordensis_CBS_223.63:0.0056641019,Mucor_cordense_RSA_1222:0.0073460127)100:0.1927357630,Mucor_ardhlaengiktus_CBS_210.80:0.1171302045)82:0.0517527958,((Mucor_amphibiorum_CBS_763.74:0.1731066382,Mucor_ucrainicus_CBS_221.71:0.3503787897)100:0.0623474696,(Mucor_inaequisporus_NRRL_3626:0.1546726203,Mucor_nederlandicus_CBS_735.70:0.1953518721)100:0.1093633602)85:0.0378897069)80:0.0261562924,(Mucor_falcatus_CBS_251.35:0.3279466472,(Mucor_indicus_Lendner_NRRL_13132:0.1913746417,Mucor_luteus_var._indica_NRRL_3245:0.1612657048)100:0.0287280376)100:0.0442071342)81:0.0291249256,(Mucor_azygosporus_Benjamin_NRRL_3068:0.1787418061,Mucor_prayagensis_CBS_816.70:0.0809649995)100:0.1012758763)100:0.1386681548,(Mucor_odoratus_NRRL_3064:0.3991115558,Mucor_zychae_var._zychae_NRRL_3243:0.3445432097)99:0.0678627552)100:0.1419850116)100:0.0569858351,(((Blakeslea_trispora_NRRL_2456:0.0884856030,(Choanephora_cucurbitarum_KUS-F28377:0.0353131495,Choanephora_infundibulifera_CBS_156.58:0.0372001764)100:0.0535219461)100:0.0582012050,Choanephora_circinans_NRRL_2546:0.1546857190)100:0.1479148239,Gilbertella_persicaria_var_persicaria_CBS_190:0.2534691437)100:0.1884063360)100:0.0487369098)95:0.0558143626,(Mucor_microsporus_CBS_204.28:0.1783074900,Mucor_microsporus_OTU100:0.1621704198)100:0.6136890826)100:0.0975561083,((Pilobolus_umbonatus_NRRL_6349:0.7110292461,Utharomyces_epallocaulus_CBS_329.73:0.5306284385)100:0.1488266360,(((Rhizopus_caespitosus_CBS_427.87:0.1622780918,Rhizopus_homothallicus_CBS_336.62:0.1636627900)100:0.0342088009,Rhizopus_rhizopodiformis_NRRL_2570:0.1959552601)100:0.1452707381,((Rhizopus_circinans_NRRL_2913:0.2706124944,((((Rhizopus_nigricans_Ehrenberg_NRRL_1477:0.0051556472,Rhizopus_stolonifer_NRRL_66455:0.0064973697)100:0.0916579065,Rhizopus_stolonifer_NRRL_66460:0.1112630023)100:0.0370416850,Rhizopus_sexualis_CBS_336.39:0.0614162960)100:0.1006248899,((Sporodiniella_umbellata_CBS_195.77:0.0047585713,Sporodiniella_umbellata_FLAS-F-62758:0.0042125196)100:0.3117788892,((Syzygites_megalocarpus_MES_1450:0.0098428327,Syzygites_sp._MES_3091:0.0013105639)100:0.0059686463,Syzygites_megalocarpus_CBS_372.39:0.0293396103)100:0.3000548630)92:0.0445888947)100:0.1547855284)100:0.1529411841,Rhizopus_oryzae_NRRL_3133:0.2269698096)100:0.0882390607)100:0.2929103637)100:0.0965100621)100:0.0680043944,(((((Backusella_circina_NRRL_2446:0.1464891172,(Backusella_gigaspora_CBS_538.80:0.2501681290,(Backusella_lamprospora_NRRL_3300:0.0811153770,Mucor_dispersus_NRRL_6046:0.0654993668)100:0.1127660770)100:0.0273553471)100:0.0649765892,(Backusella_grandis_CBS_186.87:0.1724711261,Mucor_recurvus_var._indicus_NRRL_3247:0.1360127429)100:0.0709479644)100:0.0722182781,((Backusella_variabilis_CBS_564.66:0.0750230845,Mucor_lamprosporus_NRRL_6040:0.0160414805)100:0.1183059456,Mucor_recurvus_NRRL_2358:0.0935393796)100:0.1288959383)100:0.2249310930,Backusella_oblongielliptica_CBS_568.70:0.3576194203)100:0.1480139451,Backusella_oblongispora_CBS_569.70:0.4273980098)100:0.0706227739)100:0.5070747834,Rhizomucor_pusillus_NRRL_2543:0.7984525697)78:0.1140474968,((Dichotomocladium_robustum_RSA_2353plus:0.4750596668,(Lichtheimia_corymbifera_NRRL_6379:0.1030900636,Lichtheimia_ramosa_NRRL_3208:0.3644133777)100:0.4079733609)100:0.2340034682,(Fennellomyces_linderi_CBS_158.54:0.3087357697,Zychaea_mexicana_RSA_1403:0.3325776327)100:0.2887606343)100:0.4038249361)99:0.1622182975,(Lentamyces_parricidus_NRRL2409:0.6178914603,Lentamyces_zychae_NRRL_2806:0.7796863796)100:0.6529528652);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t pep-muco_jena_v5.fungi-taxa_139.iqtree.part.treefile -q pep-muco_jena_v5.fungi-taxa_139.iqtree.part.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s pep-muco_jena_v5.fungi-taxa_139.fa --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s pep-muco_jena_v5.fungi-taxa_139.fa --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue Apr 22 12:33:49 2025
+Total CPU time used: 59559.68461 seconds (16h:32m:39s)
+Total wall-clock time used: 5631.047119 seconds (1h:33m:51s)
+
