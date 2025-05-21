@@ -39,17 +39,18 @@ do
     # previous we were running flye and canu
     for type in canu
     do
-  	   name=$STRAIN.$type
-	     MASKED=$INDIR/${name}.pilon.masked.fasta
-	     echo "in is $MASKED ($INDIR/${name}.pilon.masked.fasta)"
-	     if [ ! -f $MASKED ]; then
-		       echo "no masked file $MASKED"
-		       exit
-	     fi
-	     funannotate train -i $MASKED -o $ODIR/${name} \
-   	   --jaccard_clip --species "$SPECIES" --isolate $STRAIN \
-  	   --cpus $CPU --memory ${MEM} \
-  	   --single $RNAFOLDER/$STRAIN.fastq.gz \
-  	   --pasa_db mysql
+           name=$STRAIN.$type
+             MASKED=$INDIR/${name}.pilon.masked.fasta
+             echo "in is $MASKED ($INDIR/${name}.pilon.masked.fasta)"
+             if [ ! -f $MASKED ]; then
+                       echo "no masked file $MASKED"
+                       exit
+             fi
+             funannotate train -i $MASKED -o $ODIR/${name} \
+           --jaccard_clip --species "$SPECIES" --isolate $STRAIN \
+           --cpus $CPU --memory ${MEM} \
+           --single $RNAFOLDER/$STRAIN.fastq.gz \
+           --pasa_db mysql
     done
 done
+

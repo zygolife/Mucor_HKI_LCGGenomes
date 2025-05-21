@@ -28,14 +28,12 @@ fi
 INPUTFOLDER=predict_results
 
 IFS=,
-sed -n ${N}p $SAMPFILE | while read STRAIN NANOPORE ILLUMINA LOCUSTAG
+sed -n ${N}p $SAMPFILE | while read ID FILEBASE SPECIES STRAIN LOCUSTAG BIOSAMPLE BIOPROJECT TYPE
 do
     echo "STRAIN is $STRAIN LOCUSTAG is $LOCUSTAG"
-    BASE=$(echo -n "$SPECIES $STRAIN" | perl -p -e 's/\s+/_/g')
-    for type in canu
-    do
-	name=$STRAIN.$type
-	
+
+	name=$ID
+
 	if [ ! -d $OUTDIR/$name ]; then
 	    echo "No annotation dir for ${name}"
 	    exit
@@ -43,11 +41,10 @@ do
 	echo "processing $OUTDIR/$name"
 	if [[ ! -d $OUTDIR/$name/antismash_local && ! -s $OUTDIR/$name/antismash_local/index.html ]]; then
 	    #	antismash --taxon fungi --output-dir $OUTDIR/$name/antismash_local  --genefinding-tool none \
-		#    --asf --fullhmmer --cassis --clusterhmmer --asf --cb-general --pfam2go --cb-subclusters --cb-knownclusters -c $CPU \
-		#    $OUTDIR/$name/$INPUTFOLDER/*.gbk
+			#    --asf --fullhmmer --cassis --clusterhmmer --asf --cb-general --pfam2go --cb-subclusters --cb-knownclusters -c $CPU \
+			#    $OUTDIR/$name/$INPUTFOLDER/*.gbk
 	    time antismash --taxon fungi --output-dir $OUTDIR/$name/antismash_local \
-		 --genefinding-tool none --fullhmmer --clusterhmmer --cb-general \
-		 --pfam2go -c $CPU $OUTDIR/$name/$INPUTFOLDER/*.gbk
+			 --genefinding-tool none --fullhmmer --clusterhmmer --cb-general \
+			 --pfam2go -c $CPU $OUTDIR/$name/$INPUTFOLDER/*.gbk
 	fi
-    done
 done

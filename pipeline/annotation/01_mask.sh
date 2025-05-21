@@ -41,9 +41,14 @@ tail -n +2 $SAMPLES | sed -n ${N}p | while read BASE FileBase SPECIES STRAIN LOC
 do
     name=$BASE
     mkdir -p $MASKDIR/$BASE
-    GENOME=$(realpath $INDIR)/$BASE.AAFTF.fasta
+    GENOME=$(realpath $INDIR)/$BASE.sorted.fasta
+    if [ ! -f $GENOME ]; then
+	    module load AAFTF
+	    AAFTF sort -ml 1000 -i $INDIR/$BASE.fcs_clean.fasta -o $GENOME
+	    module unload AAFTF
+    fi
     FINAL=$(realpath $INDIR)/$BASE.masked.fasta
-    if [ ! -s $MASKDIR/$BASE/$BASE.AAFTF.fasta.masked ]; then
+    if [ ! -s $MASKDIR/$BASE/$BASE.sorted.fasta.masked ]; then
 	LIBRARY=$RMLIBFOLDER/$BASE.repeatmodeler.lib
 	COMBOLIB=$RMLIBFOLDER/$BASE.combined.lib
 	if [ ! -f $LIBRARY ]; then
@@ -65,6 +70,6 @@ do
 	echo "Skipping $BASE as masked file already exists"
     fi
     if [ ! -f $FINAL ]; then 
-   	rsync -a $MASKDIR/$BASE/$BASE.AAFTF.fasta.masked $FINAL
+   	rsync -a $MASKDIR/$BASE/$BASE.sorted.fasta.masked $FINAL
     fi
 done

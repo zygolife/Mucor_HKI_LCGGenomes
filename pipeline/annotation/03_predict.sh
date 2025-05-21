@@ -11,7 +11,7 @@ if [ $SLURM_CPUS_ON_NODE ]; then
     CPU=$SLURM_CPUS_ON_NODE
 fi
 
-BUSCO=eurotiomycetes_odb10 # This could be changed to the core BUSCO set you want to use
+BUSCO=mucoromycota_odb10
 INDIR=genomes
 OUTDIR=annotation
 mkdir -p $OUTDIR
@@ -36,30 +36,25 @@ fi
 export AUGUSTUS_CONFIG_PATH=$(realpath lib/augustus/3.3/config)
 export FUNANNOTATE_DB=/bigdata/stajichlab/shared/lib/funannotate_db
 
-SEED_SPECIES=aspergillus_fumigatus
+SEED_SPECIES=mucor_circinelloides__nrrl_a-25893
 
 IFS=,
-SPECIES="Aspergillus fumigatus"
-SEQCENTER=SeqCoast
-sed -n ${N}p $SAMPFILE | while read STRAIN NANOPORE ILLUMINA LOCUSTAG
+SEQCENTER=Jena
+PHYLUM="Mucoromycotina"
+tail -n +2 $SAMPFILE | sed -n ${N}p | while read BASE FILEBASE SPECIES STRAIN LOCUSTAG BIOSAMPLE BIOPROJECT TYPE
 do
-    echo "STRAIN is $STRAIN LOCUSTAG is $LOCUSTAG"
-    BASE=$(echo -n "$SPECIES $STRAIN" | perl -p -e 's/\s+/_/g')
-    for type in canu
-    do
-       name=$STRAIN.$type
-       MASKED=$INDIR/${name}.pilon.masked.fasta
-       echo "masked is $MASKED ($INDIR/${name}.pilon.masked.fasta)"
+    echo "STRAIN is $STRAIN BASE is $BASE LOCUSTAG is $LOCUSTAG"
+    name=$BASE
+    MASKED=$INDIR/${name}.masked.fasta
+       echo "masked is $MASKED ($INDIR/${name}.masked.fasta)"
        if [ ! -f $MASKED ]; then
            echo "no masked file $MASKED"
            exit
        fi
       funannotate predict --cpus $CPU --keep_no_stops --SeqCenter $SEQCENTER \
-       --busco_db $BUSCO --optimize_augustus \
-	     --strain $STRAIN --min_training_models 100 \
-       --AUGUSTUS_CONFIG_PATH $AUGUSTUS_CONFIG_PATH \
-	     -i $MASKED --name $LOCUSTAG \
-       --protein_evidence $FUNANNOTATE_DB/uniprot_sprot.fasta \
-	     -s "$SPECIES" -o $OUTDIR/${name} --busco_seed_species $SEED_SPECIES
-  done
+				  --busco_db $BUSCO --strain $STRAIN --min_training_models 100 \
+				  --AUGUSTUS_CONFIG_PATH $AUGUSTUS_CONFIG_PATH \
+				  -i $MASKED --name $LOCUSTAG \
+				  --protein_evidence $FUNANNOTATE_DB/uniprot_sprot.fasta \
+				  -s "$SPECIES" -o $OUTDIR/${name} --busco_seed_species $SEED_SPECIES
 done
